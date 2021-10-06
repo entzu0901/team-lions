@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pic img {
+    width: 120px;
+    margin-right: 15px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    background-image: linear-gradient(to bottom left, #8e8e8e, black);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+nav a img {
+    display: none;
+    width: 20px;
+}
+
+nav a:hover img {
+    display: inline-block;
+}
+
+nav img {
+    width: 30px;
+}
+
+.banner .container2 img {
+    width: 95%;
+   
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.banner img{
+    
+    width:1200px;
+}
+.container2 {
+    background-color: rgba(247,160,73,.1);
+    width:70%;
+    margin: auto;
+}
+
+table {
+    width: 980px;
+    margin:0 auto;
+    border: 1px solid black;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+caption {
+    margin: 30px;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+
+td {
+    border: solid 1px black;
+    padding: 10px;
+}
+.weather img{
+    width:55px;
+   
+    padding:6px;
+    
+    box-shadow: 6px 6px 16px rgba(0,0,0,0.3);
+    margin-left:8px;
+}
+.weather{
+   width:100px;
+   
+   background-color: rgb(228, 181, 95);
+   border-radius: 30%;
+   position:fixed;
+   right:0;
+   bottom: 200px;
+   opacity:1; 
+}
+.weather p{
+    color:black;
+    font-weight: 800;
+    font-size:13px;
+    padding: 8px;
+}
+.newgame{
+    width:700px;
+    height: 350px;
+    border: 3px solid black;
+    display: flex;
+    margin: 0 auto;
+    background-color:#D0D0D0;
+    opacity: 1;
+}
+.newgame .pic img{
+    width:250px;
+    height: 140px;
+    margin:0 auto;
+    position:relative;
+    top:58px;
+    left:90px;
+    box-shadow: 6px 6px 16px rgba(0,0,0,0.3);
+    margin:5px;
+}
+.detail {
+    flex-direction: column;
+    display:flex;
+    align-content: center;  
+}
+.detail p{
+    text-align: center;
+    margin:0 auto;
+    position: relative;
+    top: 250px;
+    left:-270px;
+    font-size: 21px;
+    padding-top: 1px;
+}
+h3{
+   text-align: center;
+   margin: 30px;
+   font-weight: 600;
+   font-size: 25px;
+}
+.hotplayer{
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+.container{
+    width: 63%;
+    margin:auto;
+    display:flex;
+    
+}
+.hotplayer1{
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.daian img{
+    width:160px;
+    height: 121px;
+    -webkit-filter: drop-shadow(5px 8px 5px #FFC78E); /* Safari */
+    filter: drop-shadow(5px 8px 5px #FFC78E);
+}      
+
+.anko img{
+    width:160px;
+    height: 121px;
+    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
+    filter: drop-shadow(5px 8px 5px #000);
+}      
+
+.ccsu img{
+    width:160px;
+    height: 121px;
+    -webkit-filter: drop-shadow(5px 8px 5px #FFC78E); /* Safari */
+    filter: drop-shadow(5px 8px 5px #FFC78E);
+}  
+
+.chen img{
+    width:160px;
+    height: 121px;
+    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
+    filter: drop-shadow(5px 8px 5px #000);
+}  
+
+.linhao img{ 
+    width:160px;
+    height: 121px;
+    -webkit-filter: drop-shadow(5px 8px 5px #ffc78e); /* Safari */
+    filter: drop-shadow(5px 8px 5px #ffc78e);
+}
+
+.sslin img{
+    width:160px;
+    
+    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
+    filter: drop-shadow(5px 8px 5px #000);
+}
+.sqare5{
+    width:160px;
+    height:100px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 15px;
+    background-color:rgba(100%, 100%, 100%, 0.5);
+   
+    margin:0 auto;
+    font-size:16px;
+    font-weight: 900;
+    border-radius: 20%;
+}
+
+
+.twofour img{
+    width:160px;
+    
+    -webkit-filter: drop-shadow(5px 8px 5px #ffc78e); /* Safari */
+    filter: drop-shadow(5px 8px 5px #ffc78e);
+}
+.chinkai img{
+    width:160px;
+    
+    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
+    filter: drop-shadow(5px 8px 5px #000);
+}
+.yo img{
+    width:160px;
+    
+    -webkit-filter: drop-shadow(5px 8px 5px #ffc78e); /* Safari */
+    filter: drop-shadow(5px 8px 5px #ffc78e);
+}
+.fly img{
+    width:160px;
+    
+    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
+    filter: drop-shadow(5px 8px 5px #000);
+}
+.hu img{
+    width:160px;
+    
+    -webkit-filter: drop-shadow(5px 8px 5px #ffc78e); /* Safari */
+    filter: drop-shadow(5px 8px 5px #ffc78e);
+}
+.kuo img{
+    width:160px;
+    
+    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
+    filter: drop-shadow(5px 8px 5px #000);
+}
+.newplayer{
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+.footer{
+    
+    background-image: linear-gradient(to bottom left, #8e8e8e, black);
+}
+.wei img{
+    width:160px;
+    
+    -webkit-filter: drop-shadow(5px 8px 5px #ffc78e); /* Safari */
+    filter: drop-shadow(5px 8px 5px #ffc78e);
+    
+}
+.linleft img{
+    width:160px;
+    height:120px;
+    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
+    filter: drop-shadow(5px 8px 5px #000);
+}
+.gulin img{
+    width:160px;
+    height:100px;
+    -webkit-filter: drop-shadow(5px 8px 5px #ffc78e); /* Safari */
+    filter: drop-shadow(5px 8px 5px #ffc78e);
+}
+.boat img{
+    width:160px;
+    
+    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
+    filter: drop-shadow(5px 8px 5px #000);
+}
+.footer{
+    width:1518px;
+    height: 178px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8px;
+}
+.logo img{
+    width:180px;
+    padding:5px;
+    margin-top:8px;
+}
+.logo p{
+    color:white;
+    font-size: 28px;
+    font-weight: 700;
+}
+.contact p{
+   color:white;
+   font-weight: 560;
+   margin:40px;
+   line-height: 8px;
+   margin-left: -40px;
+   font-size: 20px;
+}
+.ig img{
+    width:60px;
+    margin:10px;
+}
+.yt img{
+    width:60px;
+    margin:10px;
+}
+.twitter img{
+    width: 60px;
+    margin: 10px;
+}
+.socialmedia{
+    display:flex;
+    
+}
