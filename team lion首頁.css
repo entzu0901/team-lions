@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+  
 }
 
 .pic img {
     width: 120px;
     margin-right: 15px;
+    vertical-align: middle;
 }
 
 .header {
@@ -13,7 +15,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
-    background-image: linear-gradient(to bottom left, #8e8e8e, black);
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -27,6 +29,7 @@
     text-decoration: none;
     color: white;
     margin: 10px;
+    font-weight: 800;
 }
 
 nav a img {
@@ -90,9 +93,8 @@ td {
 }
 .weather{
    width:100px;
-   
-   background-color: rgb(228, 181, 95);
-   border-radius: 30%;
+   background-color: rgb(228, 181, 95,0.2);
+   border-radius: 15% 15% 15% 15%;
    position:fixed;
    right:0;
    bottom: 200px;
@@ -143,188 +145,115 @@ h3{
    font-weight: 600;
    font-size: 25px;
 }
-.hotplayer{
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-}
-.container{
-    width: 63%;
-    margin:auto;
-    display:flex;
-    
-}
-.hotplayer1{
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-}
-
-.daian img{
-    width:160px;
-    height: 121px;
-    -webkit-filter: drop-shadow(5px 8px 5px #FFC78E); /* Safari */
-    filter: drop-shadow(5px 8px 5px #FFC78E);
-}      
-
-.anko img{
-    width:160px;
-    height: 121px;
-    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
-    filter: drop-shadow(5px 8px 5px #000);
-}      
-
-.ccsu img{
-    width:160px;
-    height: 121px;
-    -webkit-filter: drop-shadow(5px 8px 5px #FFC78E); /* Safari */
-    filter: drop-shadow(5px 8px 5px #FFC78E);
-}  
-
-.chen img{
-    width:160px;
-    height: 121px;
-    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
-    filter: drop-shadow(5px 8px 5px #000);
-}  
-
-.linhao img{ 
-    width:160px;
-    height: 121px;
-    -webkit-filter: drop-shadow(5px 8px 5px #ffc78e); /* Safari */
-    filter: drop-shadow(5px 8px 5px #ffc78e);
-}
-
-.sslin img{
-    width:160px;
-    
-    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
-    filter: drop-shadow(5px 8px 5px #000);
-}
-.sqare5{
-    width:160px;
-    height:100px;
-    border: 1px solid black;
-    text-align: center;
-    padding-top: 15px;
-    background-color:rgba(100%, 100%, 100%, 0.5);
-   
-    margin:0 auto;
-    font-size:16px;
-    font-weight: 900;
-    border-radius: 20%;
-}
-
-
-.twofour img{
-    width:160px;
-    
-    -webkit-filter: drop-shadow(5px 8px 5px #ffc78e); /* Safari */
-    filter: drop-shadow(5px 8px 5px #ffc78e);
-}
-.chinkai img{
-    width:160px;
-    
-    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
-    filter: drop-shadow(5px 8px 5px #000);
-}
-.yo img{
-    width:160px;
-    
-    -webkit-filter: drop-shadow(5px 8px 5px #ffc78e); /* Safari */
-    filter: drop-shadow(5px 8px 5px #ffc78e);
-}
-.fly img{
-    width:160px;
-    
-    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
-    filter: drop-shadow(5px 8px 5px #000);
-}
-.hu img{
-    width:160px;
-    
-    -webkit-filter: drop-shadow(5px 8px 5px #ffc78e); /* Safari */
-    filter: drop-shadow(5px 8px 5px #ffc78e);
-}
-.kuo img{
-    width:160px;
-    
-    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
-    filter: drop-shadow(5px 8px 5px #000);
-}
-.newplayer{
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-}
-.footer{
-    
-    background-image: linear-gradient(to bottom left, #8e8e8e, black);
-}
-.wei img{
-    width:160px;
-    
-    -webkit-filter: drop-shadow(5px 8px 5px #ffc78e); /* Safari */
-    filter: drop-shadow(5px 8px 5px #ffc78e);
-    
-}
-.linleft img{
-    width:160px;
-    height:120px;
-    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
-    filter: drop-shadow(5px 8px 5px #000);
-}
-.gulin img{
-    width:160px;
-    height:100px;
-    -webkit-filter: drop-shadow(5px 8px 5px #ffc78e); /* Safari */
-    filter: drop-shadow(5px 8px 5px #ffc78e);
-}
-.boat img{
-    width:160px;
-    
-    -webkit-filter: drop-shadow(5px 8px 5px #000); /* Safari */
-    filter: drop-shadow(5px 8px 5px #000);
-}
-.footer{
-    width:1518px;
-    height: 178px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 8px;
-}
-.logo img{
-    width:180px;
-    padding:5px;
-    margin-top:8px;
-}
-.logo p{
-    color:white;
-    font-size: 28px;
-    font-weight: 700;
-}
-.contact p{
-   color:white;
-   font-weight: 560;
-   margin:40px;
-   line-height: 8px;
-   margin-left: -40px;
-   font-size: 20px;
-}
-.ig img{
-    width:60px;
-    margin:10px;
-}
-.yt img{
-    width:60px;
-    margin:10px;
-}
-.twitter img{
-    width: 60px;
-    margin: 10px;
-}
 .socialmedia{
     display:flex;
     
 }
+
+.footer .container3{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("棒球場.jpg");
+    height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height: 209px;
+    background-color: rgba(26, 25, 25, 0.2);
+}
+
+.teamlion .logo img{
+    width: 15%;
+    padding-left: 320px;
+    margin-top: 10px;
+}
+h4{
+    text-align: center;
+}
+.contact{
+    color:white;
+    font-weight: 800;
+    margin-top:30px;   
+}
+.ig img{
+    width:25px;
+    height:25px;
+}
+.yt img{
+    width:25px;
+    height:25px;
+}
+.twitter img{
+    width:25px;
+    height:25px;
+}
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 600px;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  margin: auto;
+  padding:5px;
+}
+.container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0;
+    right:300px; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  .overlay1 {
+    position: absolute; 
+    bottom: 0;
+    right:-316px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 22px;
+    text-align: center;
+  }
+  .container:hover .overlay1 {
+    opacity: 1;
+  }

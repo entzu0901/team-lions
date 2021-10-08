@@ -9,6 +9,7 @@ body{
 .header .pic img {
     width: 120px;
     margin-right: 15px;
+    vertical-align: middle;
 }
 
 .header {
@@ -16,7 +17,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
-    background-image: linear-gradient(to bottom left, #8e8e8e, black);
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -30,6 +31,7 @@ body{
     text-decoration: none;
     color: white;
     margin: 10px;
+    font-weight: 800;
 }
 
 nav a img {
@@ -71,20 +73,26 @@ nav img {
     vertical-align: middle;
     border-radius:15px 0px 0px 15px;
 }
-.news2 .pic2 img{
-    width:40%;
-}
+
 .container .txt{
     margin-left: 15px;
     margin-top: 100px;
     padding:1px;
 }
-.container .news2{
-    width:72%;
-    background-color: red;
-    margin:auto;
+.container1{
+    justify-content: center;
+    flex-direction: row;
     display: flex;
-    margin-top: 20px;
+    margin: auto;
+    width: 50%;
+}
+.news2 .pic1 img{
+    width: 300px;
+}
+.container1 .news2{
+    width: 50%;
     background-color: rgb(236, 233, 233);
-    border-radius:15px 15px 15px 15px;
+    margin:15px;
+    border-radius: 0px 0px 15px 15px;
+    border:1px solid black;
 }
