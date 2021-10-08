@@ -42,7 +42,9 @@ nav a img {
 nav a:hover img {
     display: inline-block;
 }
-
+nav a:hover{
+  text-decoration: underline;
+}
 nav img {
     width: 30px;
 }

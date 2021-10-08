@@ -9,7 +9,9 @@
     margin-right: 15px;
     vertical-align: middle;
 }
-
+body{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +38,9 @@ nav a img {
     display: none;
     width: 20px;
 }
-
+nav a:hover{
+    text-decoration: underline;
+}
 nav a:hover img {
     display: inline-block;
 }

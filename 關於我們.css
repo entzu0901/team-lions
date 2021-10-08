@@ -6,6 +6,7 @@
 .pic img {
     width: 120px;
     margin-right: 15px;
+    vertical-align: middle;
 }
 
 .header {
@@ -37,6 +38,9 @@ nav a img {
 
 nav a:hover img {
     display: inline-block;
+}
+nav a:hover{
+  text-decoration: underline;
 }
 
 nav img {
