@@ -1,0 +1,163 @@
+
+body{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    
+}
+.header .pic img {
+    width: 120px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-weight: 800;
+}
+
+nav a img {
+    display: none;
+    width: 20px;
+}
+
+nav a:hover img {
+    display: inline-block;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav img {
+    width: 30px;
+}
+.shopbanner{
+    width: 100%;
+  
+}
+.shopbanner .pic{
+    width: 51%;
+    margin:auto; 
+   
+}
+.shopbanner .pic img{
+    width: 100%;
+    margin-top: 90px;
+    border-radius:15px 15px 15px 15px;
+}
+.container {
+
+   align-content: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 70px;
+    flex-direction: row;
+    margin-top:105px;
+
+  }
+
+ .pic img{
+    width:80%;
+}
+.hu img{
+    width:80%;
+}
+.hero img{
+    width:80%;
+}
+.container1 {
+
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:70px;
+    flex-direction: row;
+    margin-top:105px;
+
+  }
+  .bn54 {
+    position: relative;
+
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 45px;
+    width: 130px;
+    opacity: 1;
+    background-color: orange;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    margin:5px;
+  }
+  
+  .bn54 .bn54span {
+    font-family: 'Teko', sans-serif;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+  }
+  
+  .bn54:hover {
+    animation: bn54rotate 0.7s ease-in-out both;
+  }
+  
+  .bn54:hover .bn54span {
+    animation: bn54storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  
+  @keyframes bn54rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes bn54storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }

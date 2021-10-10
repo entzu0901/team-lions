@@ -104,14 +104,12 @@ h2{
     font-family: Helvetica, sans-serif;
   }
   
-  /* The actual timeline (the vertical ruler) */
   .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
   }
   
-  /* The actual timeline (the vertical ruler) */
   .timeline::after {
     content: '';
     position: absolute;
@@ -126,8 +124,6 @@ h2{
     color:orange;
     background-color: yellow;
   }
-  
-  /* Container around content */
   .container {
     padding: 10px 40px;
     position: relative;
@@ -135,7 +131,7 @@ h2{
     width: 50%;
   }
   
-  /* The circles on the timeline */
+
   .container::after {
     content: '';
     position: absolute;
@@ -149,17 +145,15 @@ h2{
     z-index: 1;
   }
   
-  /* Place the container to the left */
+
   .left {
     left: 0;
   }
   
-  /* Place the container to the right */
   .right {
     left: 50%;
   }
   
-  /* Add arrows to the left container (pointing right) */
   .left::before {
     content: " ";
     height: 0;
@@ -173,7 +167,7 @@ h2{
     border-color: transparent transparent transparent white;
   }
   
-  /* Add arrows to the right container (pointing left) */
+  
   .right::before {
     content: " ";
     height: 0;
@@ -187,12 +181,12 @@ h2{
     border-color: transparent white transparent transparent;
   }
   
-  /* Fix the circle for containers on the right side */
+  
   .right::after {
     left: -16px;
   }
   
-  /* The actual content */
+  
   .content {
     padding: 20px 30px;
     background-color: white;
