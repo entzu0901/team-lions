@@ -91,6 +91,7 @@ nav img {
     width: 100%;
     background-color: plum;
     display: flex;
+    box-sizing: border-box;
 }
   
 .container .pic img {
