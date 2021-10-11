@@ -11,6 +11,7 @@
 }
 body{
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  
 }
 .header {
     display: flex;
@@ -23,8 +24,8 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 100;
+    width:100%;
+    z-index: 1;
 }
 
 .header a {
@@ -50,26 +51,24 @@ nav img {
 }
 
 .banner .container2 img {
-    width: 95%;
+    width: 100%;
    
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
 }
-.banner img{
-    
-    width:1200px;
-}
+
 .container2 {
-    
-    width:70%;
+    width:50%;
     margin: auto;
 }
 
 table {
-    width: 980px;
+    width: 100%;
     margin:0 auto;
     border: 1px solid black;
+    max-width: 980px;
 }
 
 tr {
@@ -206,7 +205,7 @@ h4{
 
 .container {
   position: relative;
-  width: 50%;
+  width: 100%;
   max-width: 600px;
   justify-content: center;
   flex-direction: row;
@@ -214,21 +213,25 @@ h4{
   margin: auto;
   padding:5px;
 }
-.container img {
+.container .pic img {
     display: block;
     width: 100%;
-    height: auto;
-    margin-left: 20px;
+    margin-right: 20px;
   }
-  
+.container .pic1 img{
+  display: block;
+  width: 110%;
+  height: 100%;
+  margin-left: 20px;
+}
   .overlay {
     position: absolute; 
     bottom: 0;
-    right:300px; 
+    right:350px; 
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1; 
-    width: 100%;
+    width: 30%;
     transition: .5s ease;
     opacity:0;
     color: white;
@@ -243,11 +246,11 @@ h4{
   .overlay1 {
     position: absolute; 
     bottom: 0;
-    right:-316px;
+    left:400px;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 0, 0, 0.5); 
     color: #f1f1f1; 
-    width: 100%;
+    width: 30%;
     transition: .5s ease;
     opacity:0;
     color: white;

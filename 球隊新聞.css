@@ -86,10 +86,10 @@ nav img {
     flex-direction: row;
     display: flex;
     margin: auto;
-    width: 50%;
+    width: 80%;
 }
 .news2 .pic1 img{
-    width: 300px;
+    width: 100%;
 }
 .container1 .news2{
     width: 50%;

@@ -21,7 +21,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 1;
 }
 
 .header a {
@@ -47,9 +47,11 @@ nav img {
     width: 30px;
 }
 
-.history{
-    width: 1200px;
-    margin: auto;
+.wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
 }
 body{
     padding:100px 0;
@@ -76,6 +78,9 @@ h2{
 .item1 .pic{
     width: 50%;
     flex-shrink: 0;
+}
+.item1 .pic1 img{
+   width:85%;
 }
 .item1 .txt{
     width:50%;
@@ -194,8 +199,8 @@ h2{
     border-radius: 6px;
   }
   .pic1 img{
-      width: 500px;
+      width: 65%;
   }
   .pic9 img{
-      width: 500px;
+      width: 65%;
   }
