@@ -214,19 +214,19 @@ h4{
 }
 .container .pic img {
     display: block;
-    width: 100%;
+    width: 385px;
     margin-right: 20px;
   }
 .container .pic1 img{
   display: block;
-  width: 110%;
-  height: 100%;
+  width: 386px;
+  height: 250px;
   margin-left: 20px;
 }
   .overlay {
     position: absolute; 
     bottom: 0;
-    right:350px; 
+    right:390px; 
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1; 
@@ -245,7 +245,7 @@ h4{
   .overlay1 {
     position: absolute; 
     bottom: 0;
-    left:400px;
+    left:386px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); 
     color: #f1f1f1; 

@@ -58,12 +58,12 @@ body {
 .chen img {
     width: 190%;
     height: 100%;
-    object-fit:cover;}
-    /*-webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    object-fit:cover;
+    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
     transform-origin:center;
     transform:perspective(800px) rotateY(25deg);
     transition:0.5s;
-  }*/
+  }
   .container {
     max-width:700px;
     max-height:350px;
@@ -74,13 +74,13 @@ body {
     flex-direction: row;
     margin-top:105px;
   }
-  /*.container:hover img {
+  .container:hover img {
     opacity:0.3;
   }
   .container img:hover {
     transform:perspective(800px)  rotateY(0deg);
     opacity:1;
-  }*/
+  }
   p{
     width:80px;
     
@@ -89,28 +89,28 @@ body {
     color:black;
     margin:15px;
   }
-  /*p:hover{
+  p:hover{
     transform:perspective(800px)  rotateY(0deg);
     opacity:1;
-  }*/
+  }
   .hu img {
     width: 190%;
     height: 100%;
-    object-fit:cover;}
-    /*-webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    object-fit:cover;
+    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
     transform-origin:center;
     transform:perspective(800px) rotateY(25deg);
     transition:0.5s;
-  }*/
+  }
   .kuo img {
     width: 190%;
     height: 100%;
-    object-fit:cover;}
-    /*-webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    object-fit:cover;
+    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
     transform-origin:center;
     transform:perspective(800px) rotateY(25deg);
     transition:0.5s;
-  }*/
+  }
 
   .container1 {
     max-width:700px;
@@ -121,7 +121,7 @@ body {
     gap:160px;
     flex-direction: row;
     }
-    /*.container1:hover p {
+    .container1:hover p {
         opacity:0.3;
       }
     .container1 p:hover {
@@ -141,14 +141,14 @@ body {
     .container p:hover {
         transform:perspective(800px)  rotateY(0deg);
         opacity:1;
-      }*/
+      }
    
     .pagination a {
     color: black;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
-    /*transition: background-color .3s;*/
+    transition: background-color .3s;
     position: relative;
     right:-50px;
   }
