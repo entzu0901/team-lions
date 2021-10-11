@@ -74,13 +74,13 @@ body {
     flex-direction: row;
     margin-top:105px;
   }
-  .container:hover img {
+  /*.container:hover img {
     opacity:0.3;
   }
   .container img:hover {
     transform:perspective(800px)  rotateY(0deg);
     opacity:1;
-  }
+  }*/
   p{
     width:80px;
     

@@ -117,7 +117,7 @@ td {
     display: flex;
     margin: 0 auto;
     background-color:#D0D0D0;
-    opacity: 1;
+  
 }
 .newgame .pic img{
     width:250px;
@@ -143,9 +143,8 @@ td {
     font-size: 21px;
     padding-top: 1px;
 }
-h3{
+.title h3{
    text-align: center;
-   margin: 30px;
    font-weight: 600;
    font-size: 25px;
 }
@@ -401,4 +400,5 @@ h4{
       transform: translate3d(0, 0, 0) translateZ(0);
     }
   }
-  
+ 
+     
