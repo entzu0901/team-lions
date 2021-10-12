@@ -172,3 +172,17 @@ p{
 p:hover{
   color:darkorange;
 }
+h3{
+  margin:auto;
+  text-align: center;
+  font-weight: 900;
+  font-size: 28px;
+  margin-top: 90px;
+  text-decoration: underline;
+  width: 20%;
+}
+.txt{
+  width:45%;
+  margin:auto;
+  text-align: center;
+}

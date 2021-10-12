@@ -79,7 +79,7 @@ p{
     flex-shrink: 0;
 }
 .item1 .pic1 img{
-   width:85%;
+   width:88%;
 }
 .item1 .txt{
     width:50%;
@@ -90,7 +90,7 @@ p{
     flex-shrink: 0;
 }
 .item1 >:first-child{
-    margin-right: -10%;
+    margin-right: -13%;
 }
 .item1:nth-child(1) .txt{
     background-color: rgb(182, 168, 160,.8)
@@ -197,8 +197,8 @@ p{
     border-radius: 6px;
   }
   .pic1 img{
-      width: 65%;
+      width: 75%;
   }
   .pic9 img{
-      width: 65%;
+      width: 75%;
   }
