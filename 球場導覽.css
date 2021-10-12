@@ -268,3 +268,19 @@ nav img {
     font-size: 22px;
     color:black;
   }
+  .placeiv{
+    text-align: center;
+    margin:auto;  
+  }
+  .placeiv h3{
+    text-decoration: underline;
+    font-size: 28px;
+  }
+  .partyiv{
+    text-align: center;
+    margin:auto;  
+  }
+  .partyiv h3{
+    text-decoration: underline;
+    font-size: 28px;
+  }
