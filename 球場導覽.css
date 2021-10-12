@@ -270,7 +270,8 @@ nav img {
   }
   .placeiv{
     text-align: center;
-    margin:auto;  
+    margin:auto;
+    width:45%;  
   }
   .placeiv h3{
     text-decoration: underline;
