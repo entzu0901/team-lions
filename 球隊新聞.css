@@ -6,59 +6,53 @@
 body{
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
-.header .pic img {
-    width: 120px;
-    margin-right: 15px;
-    vertical-align: middle;
-}
-
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
+.main-header{
     background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .main-header .container3{
+    display: flex;
+    padding: 0px;
+    width: 1000px;
+    max-width: 1000px;
+    margin-left: 180px;
     align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-}
-
-.header a {
+  }
+  .main-header .logo{
+    width:150px;
+    max-width: 150px;
+    margin:0px;
+  }
+  .main-header .logo img{
+    width:150px;
+    vertical-align: middle;
+  }
+  .main-header .main-nav a{
     text-decoration: none;
-    color: white;
-    margin: 10px;
+    color:white;
+    padding:5px;
+  }
+  nav a{
+    font-size:16px;
     font-weight: 800;
-}
-
-nav a img {
-    display: none;
-    width: 20px;
-}
-
-nav a:hover img {
-    display: inline-block;
-}
-nav a:hover{
-    text-decoration: underline;
-}
-nav img {
-    width: 30px;
-}
+    margin:10px;
+  }
+  nav a:hover{
+    border-bottom: 3px solid black;
+  }
 .newbanner{
-    width: 100%;
+    width: 1200px;
 }
 .newbanner .pic{
-    width: 51%;
+    width: 600px;
     margin:auto; 
    
 }
 .newbanner .pic img{
-    width: 100%;
-    margin-top: 90px;
+    width: 900px;
+    margin-top: 20px;
     border-radius:15px 15px 15px 15px;
 }
 .container .news1{
@@ -101,3 +95,11 @@ nav img {
 span{
     margin:7px;
 }
+footer {
+    text-align: center;
+    padding: 3px;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    color: black;
+    font-weight: 600;
+    margin-top: 40px;
+  }
