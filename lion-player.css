@@ -72,9 +72,22 @@ body {
     transform:perspective(800px)  rotateY(0deg);
     opacity:1;
   }
-  p{
-    width:80px;
-    
+  .hu p{
+    width:80px; 
+    font-weight: 700;
+    font-size: 22px;
+    color:black;
+    margin:15px;
+  }
+  .chen p{
+    width:80px; 
+    font-weight: 700;
+    font-size: 22px;
+    color:black;
+    margin:15px;
+  }
+  .kuo p{
+    width:80px; 
     font-weight: 700;
     font-size: 22px;
     color:black;

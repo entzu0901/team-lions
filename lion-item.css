@@ -2,6 +2,7 @@
   margin: 0;
   padding:0;
   list-style: 0;
+  font-family: 'Teko', sans-serif;
 }
 
 body{
@@ -155,7 +156,15 @@ span{
   font-weight: 800;
   font-size: 25px;
 }
-p{
+.pic p{
+  font-size:25px;
+  font-weight: bold;
+}
+.hu p{
+  font-size:25px;
+  font-weight: bold;
+}
+.hero p{
   font-size:25px;
   font-weight: bold;
 }
@@ -186,5 +195,5 @@ footer{
 }
 .footertxt p{
   font-size: 17px;
-  margin-top: 20px;
+ 
 }
