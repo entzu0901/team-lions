@@ -1,24 +1,25 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
     font-family: 'Teko', sans-serif;
+    list-style: none;
 }
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
   display:flex;
   align-items:center;
+  justify-content: center;
 }
-.main-header.container3{
+.main-header .container5{
   display: flex;
-  width: 1230px;
+  max-width: 1500px;
   margin-left: 110px;
   align-items: center;
 }
 .main-header .logo{
   width:150px;
   max-width: 150px;
-  margin-left: 120px;
+  margin-left: 20px;
 }
 .main-header .logo img{
   width:150px;
@@ -27,6 +28,7 @@
 .main-header .main-nav a{
   text-decoration: none;
   color:white;
+  padding: 5px;
 }
 nav a{
     font-size:16px;
@@ -39,11 +41,10 @@ nav a:hover{
 
 
 body {
-    width: 100%;
-    height: 100vh;
+  
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-    display:grid;
     place-items:center;
+    
   }
 .chen img {
     width: 190%;
@@ -62,7 +63,7 @@ body {
     align-items:center;
     gap:160px;
     flex-direction: row;
-    margin-top:105px;
+    margin: auto;
   }
   .container:hover img {
     opacity:0.3;
@@ -110,6 +111,7 @@ body {
     align-items:center;
     gap:160px;
     flex-direction: row;
+    margin:auto;
     }
     .container1:hover p {
         opacity:0.3;
@@ -150,6 +152,24 @@ body {
   }
   
   .pagination{
-      margin:auto;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
   .pagination a:hover:not(.active) {background-color: #ddd;}
+  
+  footer {
+    text-align: center;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    color: black;
+    font-weight: 600;
+    margin-top: 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .footertxt p{
+    font-size:15px;
+    padding: 1px;
+  }
