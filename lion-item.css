@@ -8,40 +8,6 @@
 body{
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
-.main-header{
-  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-.main-header .container9{
-  display: flex;
-  padding: 0px;
-  width: 1000px;
-  margin-left: 80px;
-  align-items: center;
-}
-.main-header .logo{
-  width:150px;
-  max-width: 150px;
-  margin-left: 120px;
-}
-.main-header .logo img{
-  width:150px;
-  vertical-align: middle;
-}
-.main-header .main-nav a{
-  text-decoration: none;
-  color:white;
-}
-nav a{
-    font-size:16px;
-    font-weight: 800;
-    margin:10px;
-  }
-nav a:hover{
-    border-bottom: 3px solid black;
-  }
 
 .shopbanner{
     width: 100%;
@@ -55,7 +21,43 @@ nav a:hover{
     margin-top: 20px;
     border-radius:15px 15px 15px 15px;
 }
-.container {
+.main-header{
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+}
+.main-header .container{
+  display: flex;
+  padding: 0px;
+  max-width: 1000px;
+  margin-left: 180px;
+  align-items: center;
+  gap:10px;
+  z-index: 20;
+}
+.main-header .logo{
+  width:150px;
+  max-width: 150px;
+  margin-left: 90px;
+}
+.main-header .logo img{
+  width:150px;
+  vertical-align: middle;
+}
+.main-header .main-nav a{
+  text-decoration: none;
+  color:white;
+  padding:5px;
+}
+nav a{
+  font-size:16px;
+  font-weight: 800;
+  margin:10px;
+}
+nav a:hover{
+  border-bottom: 3px solid black;
+}
+
+
+.container5 {
     align-content: center;
     display:flex;
     justify-content:center;
@@ -202,4 +204,7 @@ footer{
 .footertxt p{
   font-size: 17px;
  
+}
+#menu-control{
+  display: none;
 }
