@@ -9,18 +9,6 @@ body{
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
-.shopbanner{
-    width: 100%;
-}
-.shopbanner .pic{
-    width: 1000px;
-    margin:auto; 
-}
-.shopbanner .pic img{
-    width: 1000px;
-    margin-top: 20px;
-    border-radius:15px 15px 15px 15px;
-}
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
@@ -76,7 +64,7 @@ nav a:hover{
 .hero img{
     width:400px;
 }
-.container1 {
+.shop1 {
     display:flex;
     justify-content:center;
     align-items:center;
