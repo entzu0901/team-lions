@@ -1,0 +1,40 @@
+@media screen and (min-width:768px)and (max-width:1024px){
+    .wrapper{
+        width:100%;
+    }
+    .item1 {
+        width: 100%;
+    }
+    .item1 .pic1 img{
+        width:100%;
+    }
+    .txt{
+        width:90%;
+    }
+   .pic9 img{
+        width:70%;
+    }
+    .item1 .pic img{
+        width:100%;
+    }
+    .pic1 img{
+        width:70%;
+    }
+    footer{
+        width:100%;
+    }
+    .left::before{display:none;
+    }
+    .right::before{
+        display:none;
+    }
+    .timeline::after {
+        display:none;
+    }
+    .container::after{
+        display:none;
+    }
+    .right::after{
+        display:none;
+    }
+}

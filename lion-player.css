@@ -56,8 +56,7 @@ body {
     transition:0.5s;
   }
   .container {
-    max-width:700px;
-    max-height:350px;
+    width:800px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -116,34 +115,10 @@ body {
     transition:0.5s;
   }
 
-  .container1 {
-    max-width:700px;
-    max-height:350px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:160px;
-    flex-direction: row;
-    margin:auto;
-    }
-    .container1:hover p {
+  .container:hover p {
         opacity:0.3;
       }
-    .container1 p:hover {
-        transform:perspective(800px)  rotateY(0deg);
-        opacity:1;
-      }
-      .container1:hover img {
-        opacity:0.3;
-      }
-      .container1 img:hover {
-        transform:perspective(800px)  rotateY(0deg);
-        opacity:1;
-      }
-      .container:hover p {
-        opacity:0.3;
-      }
-    .container p:hover {
+  .container p:hover {
         transform:perspective(800px)  rotateY(0deg);
         opacity:1;
       }

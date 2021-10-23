@@ -1,0 +1,42 @@
+@media screen and (min-width:768px)and (max-width:1024px){
+    
+    .newspreview{
+        width:100%;
+        padding:20px;
+    }
+    .newgame{
+        width:100%;
+        padding:10px;
+    }
+    .newgame .pic img{
+        width:100%;
+    }
+    .weather{
+        display:none;
+    }
+    .bn50{
+        bottom:5%;
+    }
+    .banner .container2 img{
+        width: 768px;
+        padding:5%;
+    }
+
+    .container8{
+        width:100%;
+    }
+    .container8 .pic img{
+        width:384px;
+    }
+   
+    footer{
+        width:100%;
+    }
+    .overlay{
+        display:none;
+    }
+    .overlay1{
+        display:none;
+    }
+  
+}
