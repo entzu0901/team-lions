@@ -6,20 +6,20 @@
 }
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
-  display:flex;
-  align-items:center;
-  justify-content: center;
 }
-.main-header .container5{
+.main-header .container{
   display: flex;
-  max-width: 1500px;
-  margin-left: 110px;
+  padding: 0px;
+  max-width: 1000px;
+  margin-left: 180px;
   align-items: center;
+  gap:10px;
+  z-index: 20;
 }
 .main-header .logo{
   width:150px;
   max-width: 150px;
-  margin-left: 20px;
+  margin-left: 90px;
 }
 .main-header .logo img{
   width:150px;
@@ -28,17 +28,16 @@
 .main-header .main-nav a{
   text-decoration: none;
   color:white;
-  padding: 5px;
+  padding:5px;
 }
 nav a{
-    font-size:16px;
-    font-weight: 800;
-    margin:10px;
-  }
+  font-size:16px;
+  font-weight: 800;
+  margin:10px;
+}
 nav a:hover{
-    border-bottom: 3px solid black;
-  }
-
+  border-bottom: 3px solid black;
+}
 
 body {
   
@@ -55,9 +54,8 @@ body {
     transform:perspective(800px) rotateY(25deg);
     transition:0.5s;
   }
-  .container {
-    max-width:700px;
-    max-height:350px;
+  .container1 {
+    width:800px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -65,10 +63,10 @@ body {
     flex-direction: row;
     margin: auto;
   }
-  .container:hover img {
+  .container1:hover img {
     opacity:0.3;
   }
-  .container img:hover {
+  .container1 img:hover {
     transform:perspective(800px)  rotateY(0deg);
     opacity:1;
   }
@@ -116,34 +114,10 @@ body {
     transition:0.5s;
   }
 
-  .container1 {
-    max-width:700px;
-    max-height:350px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:160px;
-    flex-direction: row;
-    margin:auto;
-    }
-    .container1:hover p {
+  .container1:hover p {
         opacity:0.3;
       }
-    .container1 p:hover {
-        transform:perspective(800px)  rotateY(0deg);
-        opacity:1;
-      }
-      .container1:hover img {
-        opacity:0.3;
-      }
-      .container1 img:hover {
-        transform:perspective(800px)  rotateY(0deg);
-        opacity:1;
-      }
-      .container:hover p {
-        opacity:0.3;
-      }
-    .container p:hover {
+  .container1 p:hover {
         transform:perspective(800px)  rotateY(0deg);
         opacity:1;
       }
@@ -186,3 +160,6 @@ body {
     font-size:15px;
     padding: 1px;
   }
+  #menu-control{
+    display: none;
+}

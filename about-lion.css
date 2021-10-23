@@ -2,25 +2,24 @@
     margin: 0;
     padding: 0;
     list-style: 0;
+    box-sizing: border-box;
 }
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
-  display:flex;
-  justify-content:center;
-  align-items:center;
 }
-.main-header .container3{
+.main-header .container{
   display: flex;
   padding: 0px;
-  width: 1000px;
   max-width: 1000px;
   margin-left: 180px;
   align-items: center;
+  gap:10px;
+  z-index: 20;
 }
 .main-header .logo{
   width:150px;
   max-width: 150px;
-  margin:0px;
+  margin-left: 90px;
 }
 .main-header .logo img{
   width:150px;
@@ -39,6 +38,7 @@ nav a{
 nav a:hover{
   border-bottom: 3px solid black;
 }
+
 .wrapper{
   display:flex;
   justify-content:center;
@@ -97,17 +97,13 @@ h2{
 .item1:nth-child(2) .txt{
     background-color: rgba(254, 201, 121, .8);
 }
-* {
-    box-sizing: border-box;
-  }
-  
  
   .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+   
   .timeline::after {
     content: '';
     position: absolute;
@@ -118,7 +114,7 @@ h2{
     left: 50%;
     margin-left: -3px;
   }
-  .container {
+  .container5 {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -126,12 +122,12 @@ h2{
   }
   
 
-  .container::after {
+  .container5::after {
     content: '';
     position: absolute;
     width: 20px;
     height: 20px;
-    right: 3px;
+    right:3px;
     background-color: black;
     border: 4px solid #FF9F55;
     top: 15px;
@@ -155,7 +151,6 @@ h2{
     top: 22px;
     width: 0;
     z-index: 1;
-    right: 3px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
@@ -182,15 +177,15 @@ h2{
   
   
   .content {
-    padding: 20px 30px;
+    padding: 20px ;
     background-color: white;
-    position: relative;
+    width:500px;
     border-radius: 6px;
   }
-  .pic1 img{
+  .container5 .pic1 img{
       width: 550px;
   }
-  .pic9 img{
+  .container5 .pic9 img{
       width: 550px;
   }
   footer {
@@ -201,3 +196,6 @@ h2{
     font-weight: 600;
     margin-top: 40px;
   }
+  #menu-control{
+    display: none;
+}
