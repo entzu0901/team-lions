@@ -9,13 +9,14 @@ body{
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
-.main-header .container3{
+.main-header .container{
   display: flex;
   padding: 0px;
   max-width: 1000px;
   margin-left: 180px;
   align-items: center;
   gap:10px;
+  z-index: 20;
 }
 .main-header .logo{
   width:150px;
@@ -30,9 +31,6 @@ body{
   text-decoration: none;
   color:white;
   padding:5px;
-}
-nav img{
-  width:30px;
 }
 nav a{
   font-size:16px;
@@ -83,7 +81,7 @@ nav a:hover{
     text-align: right;
 }
 
-.container{
+.container3{
     display:flex;
     justify-content:center;
     align-items:center;
@@ -111,7 +109,7 @@ nav a:hover{
 .item .pic5 img{
   width:330px;
 }
-  .container {
+  .container3 {
     position: relative;
     width: 1500px;
   }
@@ -135,7 +133,7 @@ nav a:hover{
     text-align: center;
   }
   
-  .container:hover img {
+  .container3:hover img {
     opacity: 0.4;
   }
   
@@ -163,7 +161,7 @@ nav a:hover{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-  .container:hover .middle1 {
+  .container3:hover .middle1 {
     opacity: 1;
   }
   .middle2 {
@@ -176,7 +174,7 @@ nav a:hover{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-  .container:hover .middle2 {
+  .container3:hover .middle2 {
     opacity: 1;
   }
   .middle3 {
@@ -287,3 +285,6 @@ nav a:hover{
     font-weight: 600;
     margin-top: 20px;
   }
+  #menu-control{
+    display: none;
+}

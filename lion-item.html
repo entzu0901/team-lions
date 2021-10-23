@@ -7,17 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>周邊商品</title>
     <link rel="stylesheet" href="lion-item.css">
+    <link rel="stylesheet" href="lion-item-rwd.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- 主選單 -->
+    <input type="checkbox" name="" id="menu-control">
     <header class="main-header">
-        <div class="container9">
+        <div class="container">
             <a href="team-lion.html" class="logo">
-                <img src="lion logo.jpg" alt="lionlogo">
+                <img src="lion-logo.jpg" alt="lionlogo">
             </a>
+            <label for="menu-control" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <nav class="main-nav">
                 <a href="about-lion.html">關於我們</a>
                 <a href="lion-news.html">球隊新聞</a>
@@ -30,15 +38,47 @@
             </nav>
         </div>
     </header>
-    <div class="shopbanner">
-        <div class="pic">
-            <img src="100 saves.jpg">
+    <div class="slideshow-container">
+        <div class="slideshow-inner">
+            <div class="mySlides fade">
+
+                <img src="item banner.jpg" style='width: 100%;' />
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="ccsuitem.jpg" style='width: 100%;' />
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="13record.jpg" style='width: 100%;' />
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="100 saves.jpg" style='width: 100%;' />
+
+            </div>
         </div>
+        <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+        <a class="next" onclick='plusSlides(1)'>&#10095;</a>
     </div>
+    <br />
+    <div style='text-align: center;'>
+        <span class="dot" onclick='currentSlide(1)'></span>
+        <span class="dot" onclick='currentSlide(2)'></span>
+        <span class="dot" onclick='currentSlide(3)'></span>
+        <span class="dot" onclick='currentSlide(4)'></span>
+    </div>
+
     <div class="txt1">
         <h3>熱門商品</h3>
     </div>
-    <div class="container">
+    <div class="shop">
         <div class="pic">
             <img src="100savet.jpeg">
             <p>陳韻文百救援紀念T</p>
@@ -169,6 +209,79 @@
             <p>teamlion2021@gmail.com</p>
         </div>
     </footer>
+
+    <script>
+        var slideIndex = 1;
+
+        var myTimer;
+
+        var slideshowContainer;
+
+        window.addEventListener("load", function () {
+            showSlides(slideIndex);
+            myTimer = setInterval(function () { plusSlides(1) }, 1000);
+
+            //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+            slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+
+            //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+            // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+
+            slideshowContainer.addEventListener('mouseenter', pause)
+            slideshowContainer.addEventListener('mouseleave', resume)
+        })
+
+        // NEXT AND PREVIOUS CONTROL
+        function plusSlides(n) {
+            clearInterval(myTimer);
+            if (n < 0) {
+                showSlides(slideIndex -= 1);
+            } else {
+                showSlides(slideIndex += 1);
+            }
+
+            //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+
+            if (n === -1) {
+                myTimer = setInterval(function () { plusSlides(n + 2) }, 1000);
+            } else {
+                myTimer = setInterval(function () { plusSlides(n + 1) }, 1000);
+            }
+        }
+
+        //Controls the current slide and resets interval if needed
+        function currentSlide(n) {
+            clearInterval(myTimer);
+            myTimer = setInterval(function () { plusSlides(n + 1) }, 1000);
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        pause = () => {
+            clearInterval(myTimer);
+        }
+
+        resume = () => {
+            clearInterval(myTimer);
+            myTimer = setInterval(function () { plusSlides(slideIndex) }, 1000);
+        }
+    </script>
+
 </body>
 
 </html>

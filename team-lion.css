@@ -17,6 +17,7 @@ body{
   margin-left: 180px;
   align-items: center;
   gap:10px;
+  z-index: 20;
 }
 .main-header .logo{
   width:150px;
@@ -32,14 +33,77 @@ body{
   color:white;
   padding:5px;
 }
-.banner .container2 img {
-    width: 1000px;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto
 }
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+
+  font-weight: bold;
+  font-size: 30px;
+  transition: .6s ease;
+  border-radius: 0 3px 3px 0
+}
+
+.next {
+  right: -50px;
+  border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+  left: -50px;
+  border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.8)
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+  background-color: #717171
+}
+
 nav a{
   font-size:16px;
   font-weight: 800;
@@ -103,37 +167,27 @@ td {
     font-size:13px;
     padding: 8px;
 }
-.newgame{
-    width:700px;
-    height: 350px;
-    border: 3px solid black;
-    display: flex;
-    margin: 0 auto;
-    background-color:#D0D0D0;
+
+.newgame {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: row;
+  margin: auto;
+  width: 600px;
+  height: 300px;
 }
 .newgame .pic img{
-    width:250px;
-    height: 140px;
+    width: 550px;
     margin:0 auto;
-    position:relative;
-    top:58px;
-    left:90px;
-    box-shadow: 6px 6px 16px rgba(0,0,0,0.3);
-    margin:5px;
+  
 }
-.detail {
-    flex-direction: column;
-    display:flex;
-    align-content: center;  
-}
-.detail p{
-    text-align: center;
-    margin:0 auto;
-    position: relative;
-    top: 250px;
-    left:-270px;
-    font-size: 21px;
-    padding-top: 1px;
+.newgame .pic{
+  margin:auto;
+  justify-content:center;
+  align-items:center;
+  flex-direction: row;
+
 }
 .title h3{
    text-align: center;
@@ -145,7 +199,7 @@ td {
 
 * {box-sizing: border-box;}
 
-.container {
+.container8 {
   position: relative;
   width: 100%;
   max-width: 600px;
@@ -155,13 +209,13 @@ td {
   margin: auto;
   padding:5px;
 }
-.container .pic img {
-    display: block;
+.container8 .pic img {
+    max-width: 385px;
     width: 385px;
     margin-right: 20px;
   }
-.container .pic1 img{
-  display: block;
+.container8 .pic1 img{
+  max-width: 386px;
   width: 386px;
   height: 257px;
   margin-left: 20px;
@@ -182,7 +236,7 @@ td {
     text-align: center;
   }
   
-  .container:hover .overlay {
+  .container8:hover .overlay {
     opacity: 1;
   }
   .overlay1 {
@@ -200,7 +254,7 @@ td {
     padding: 22px;
     text-align: center;
   }
-  .container:hover .overlay1 {
+  .container8:hover .overlay1 {
     opacity: 1;
   }
   .bn54 {
@@ -352,3 +406,6 @@ td {
     font-weight: 600;
     margin-top: 50px;
   }
+  #menu-control{
+    display: none;
+}
