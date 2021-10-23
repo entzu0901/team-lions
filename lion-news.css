@@ -41,17 +41,18 @@ nav a:hover{
   border-bottom: 3px solid black;
 }
 .newbanner{
-    width: 1200px;
+  max-width: 1200px;
+  display:flex;
 }
 .newbanner .pic{
-    width: 600px;
-    margin:auto; 
-   
+  max-width: 600px;
+  margin:auto; 
+ 
 }
 .newbanner .pic img{
-    width: 900px;
-    margin-top: 20px;
-    border-radius:15px 15px 15px 15px;
+  max-width: 950px;
+  margin-top: 20px;
+  border-radius:15px 15px 15px 15px;
 }
 div.grid_container{
   background-color: #eaecf2;
