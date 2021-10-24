@@ -150,7 +150,7 @@
   
 }
 /* 手機版 */
-@media screen and (max-width:768px){
+@media screen and (min-width:375px)and (max-width:768px){
     .hb{
         width: 40px;
         height: 40px;
@@ -255,9 +255,47 @@
         right:280px;
         vertical-align: middle;
       }
-
-
-
+    .weather{
+        display:none;
+    }
+    .newspreview{
+        width:100%;
+        padding:20px;
+    }
+    .newgame{
+        width:100%;
+        padding:10px;
+    }
+    .newgame .pic img{
+        width:100%;
+    }
+    .bn50{
+        bottom:30px;;
+    }
+    .overlay{
+        display:none;
+    }
+    .overlay1{
+        display:none;
+    }
+    .container8 {
+        width:100%;
+        margin: 0 auto;
+        display: grid;
+        margin-top: 25px;
+    }
+    .container8 .pic1 img{
+       margin-left:0px;
+    }
+    footer{
+        width:100%;
+    }
+    .prev{
+        display:none;
+    }
+    .next{
+        display:none;
+    }
 }
 
 
