@@ -246,14 +246,17 @@
         footer{
              width:100%;
          }
-         .chen ing{
+         .chen img{
             z-index:-1;
+            -webkit-box-reflect:unset;
          }
          .hu img {
              z-index:-1;
+             -webkit-box-reflect:unset;
          }
          .kuo img{
              z-index:-1;
+             -webkit-box-reflect:unset;
          }
     }
     
