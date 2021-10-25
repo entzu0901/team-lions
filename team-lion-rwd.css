@@ -11,13 +11,14 @@
     .hb{
         width: 40px;
         height: 40px;
-        background-color: white;
+        background-color: black;
         position: relative;
+        left: 280px;
     }
     .hb span{
         width: 32px;
         height: 2px;
-        background-color: black;
+        background-color: orange;
         position: absolute;
         right: 0;
         left: 0;
@@ -106,6 +107,7 @@
         width:100px;
         vertical-align: middle;
         position:relative;
+        right: 280px;
       }
      /* 幻燈片 */
     .next{
@@ -155,7 +157,7 @@
 } 
 
 /* 手機版 */
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     /* 今日天氣 */
     .weather{
         display:none;
@@ -168,6 +170,7 @@
     .newgame{
         width:100%;
         padding:10px;
+        margin-top: -50px;
     }
     .newgame .pic img{
         width:100%;
@@ -196,13 +199,14 @@
     .hb{
         width: 40px;
         height: 40px;
-        background-color: white;
+        background-color: black;
         position: relative;
+        left:70px;
     }
     .hb span{
         width: 32px;
         height: 2px;
-        background-color: black;
+        background-color: orange;
         position: absolute;
         right: 0;
         left: 0;
@@ -289,5 +293,7 @@
         position:relative;
         vertical-align: middle;
       }
-   
+    .bn50{
+        bottom:60px;
+    }
 }
