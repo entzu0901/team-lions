@@ -106,10 +106,11 @@
     #menu-control{
         display: none;
     }
-    .homepage img{
-        width:50px;
+    .main-header .logo img{
+        width:80px;
         vertical-align: middle;
         position:relative;
+        right:320px;
       }
     footer{
         width:100%;
@@ -120,7 +121,7 @@
     }
 }
       /* 手機版 */
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .hb{
         width: 40px;
         height: 40px;
@@ -218,10 +219,11 @@
     #menu-control{
         display: none;
     }
-    .homepage img{
-        width:40px;
+    .main-header .logo img{
+        width:80px;
         vertical-align: middle;
         position:relative;
+        right:110px;
       }
     .shop {
         width:100%;

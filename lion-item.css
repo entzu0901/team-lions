@@ -22,10 +22,7 @@ body{
   z-index: 20;
   margin:auto;
 }
-.main-header .logo{
-  width:150px;
-  max-width: 150px;
-}
+
 .main-header .logo img{
   width:150px;
   vertical-align: middle;
