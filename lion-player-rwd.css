@@ -138,7 +138,7 @@
         .hb span{
             width: 32px;
             height: 2px;
-            background-color: #fff;
+            background-color: orange;
             position: absolute;
             right: 0;
             left: 0;
