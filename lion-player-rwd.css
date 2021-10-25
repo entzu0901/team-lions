@@ -246,5 +246,14 @@
         footer{
              width:100%;
          }
+         .chen ing{
+            z-index:-1;
+         }
+         .hu img {
+             z-index:-1;
+         }
+         .kuo img{
+             z-index:-1;
+         }
     }
     
