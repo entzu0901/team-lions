@@ -153,7 +153,9 @@
         top: 0;
         bottom: 0;
     }
-
+    h3{
+        margin-top:30px;
+    }
 
 
     #menu-control:checked ~ .main-header .hb span:first-child{
