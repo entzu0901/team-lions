@@ -8,7 +8,7 @@
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
-.main-header .container{
+.main-header .homepage{
   display: flex;
   padding: 0px;
   max-width: 1000px;
@@ -16,10 +16,6 @@
   gap:10px;
   z-index: 20;
   margin:auto;
-}
-.main-header .logo{
-  width:150px;
-  max-width: 150px;
 }
 .main-header .logo img{
   width:150px;

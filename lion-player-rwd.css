@@ -1,3 +1,10 @@
+@media screen and (max-width:1025px) {
+    .hb {
+        display: block;
+    }
+}
+
+
 /*平板 */
 @media screen and (min-width:768px)and (max-width:1024px){ 
     .hb{
@@ -5,6 +12,7 @@
         height: 40px;
         background-color: #000000;
         position: relative;
+        right: -300px;
         
     }
     .hb span{
@@ -96,9 +104,6 @@
         padding: 4px 10px;
         position: relative;
     }
-    .logo img{
-        vertical-align: middle;
-    }
     #menu-control{
         display: none;
     }
@@ -106,9 +111,9 @@
         width:80px;
         vertical-align: middle;
         position:relative;
-
+        right:320px;
       }
-      .container1 {
+    .container1 {
         padding: 10px;
         gap: 5px;
         width: 100%;
@@ -128,6 +133,7 @@
             height: 40px;
             background-color: #000;
             position: relative;
+            right: -120px;
         }
         .hb span{
             width: 32px;
@@ -192,6 +198,7 @@
             width: 50%;
             height: calc(100vh - 50px);
             transition: left 1s;
+            z-index:10;
         }
         .main-nav a{
             display: block;
@@ -226,8 +233,7 @@
             position:relative;
           }
         .container1 {
-            padding: 5px;
-            
+            padding: 5px;       
             width: 100%;
             display:grid;
          }
