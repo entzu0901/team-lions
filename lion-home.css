@@ -17,6 +17,7 @@ body{
   align-items: center;
   gap:10px;
   z-index: 20;
+  margin:auto;
 }
 .main-header .logo{
   width:150px;

@@ -114,6 +114,10 @@
     footer{
         width:100%;
     }
+    .shop{
+        padding:15px;
+        gap:20px;
+    }
 }
       /* 手機版 */
 @media screen and (max-width:768px){
@@ -218,6 +222,16 @@
         width:40px;
         vertical-align: middle;
         position:relative;
-        right:100px;
       }
+    .shop {
+        width:100%;
+        display:grid;
+        padding:15px;
+    }
+    .txt1{
+        width:100%;
+    }
+    footer{
+        width:100%;
+    }
 }
