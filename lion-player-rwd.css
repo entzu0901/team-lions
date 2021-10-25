@@ -249,14 +249,17 @@
          .chen img{
             z-index:-1;
             -webkit-box-reflect:unset;
+            transform: unset;
          }
          .hu img {
              z-index:-1;
              -webkit-box-reflect:unset;
+             transform: unset;
          }
          .kuo img{
              z-index:-1;
              -webkit-box-reflect:unset;
+             transform: unset;
          }
     }
     
