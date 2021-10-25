@@ -103,42 +103,18 @@
         padding: 4px 10px;
         position: relative;
     }
-    .main-header .container{
-        display: flex;
-        padding: 0px;
-        max-width: 1000px;
-        margin-left: 180px;
-        align-items: center;
-        gap:10px;
-        z-index: 20;
-      }
-    .logo img{
-        vertical-align: middle;
-    }
     #menu-control{
         display: none;
     }
-    .main-header .logo img{
-        width:80px;
+    .homepage img{
+        width:50px;
         vertical-align: middle;
         position:relative;
-        right:280px;
       }
+    footer{
+        width:100%;
     }
-    .next{
-        display:none;
-    }
-    .shop {
-        align-content: center;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        flex-direction: row;
-        margin-top:45px;
-        gap:50px;
-        padding:20px;
-      }
-    
+}
       /* 手機版 */
 @media screen and (max-width:768px){
     .hb{
@@ -229,15 +205,6 @@
         padding: 4px 10px;
         position: relative;
     }
-    .main-header .container{
-        display: flex;
-        padding: 0px;
-        max-width: 1000px;
-        margin-left: 180px;
-        align-items: center;
-        gap:10px;
-        z-index: 20;
-      }
     .main-nav img{
         display: block;
         width:40px;
@@ -247,14 +214,10 @@
     #menu-control{
         display: none;
     }
-    .main-header .logo img{
-        width:80px;
+    .homepage img{
+        width:40px;
         vertical-align: middle;
         position:relative;
-        right:280px;
-        vertical-align: middle;
+        right:100px;
       }
-
-
-
 }

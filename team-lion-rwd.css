@@ -7,16 +7,17 @@
 
 /*平板 */
 @media screen and (min-width:768px)and (max-width:1024px){ 
+    /*主選單  */
     .hb{
         width: 40px;
         height: 40px;
-        background-color: #000000;
+        background-color: white;
         position: relative;
     }
     .hb span{
         width: 32px;
         height: 2px;
-        background-color: #fff;
+        background-color: black;
         position: absolute;
         right: 0;
         left: 0;
@@ -38,9 +39,6 @@
         top: 0;
         bottom: 0;
     }
-
-
-
     #menu-control:checked ~ .main-header .hb span:first-child{
         top: 19px;
         transform: rotate(225deg);
@@ -63,11 +61,7 @@
     }
     #menu-control:checked ~ .main-header .hb span:nth-child(2){
         opacity: 0;
-    }
-
-
-
-
+}
     .main-nav{
         position: absolute;
         background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
@@ -113,9 +107,14 @@
         vertical-align: middle;
         position:relative;
       }
+     /* 幻燈片 */
     .next{
         display:none;
     }
+    .prev{
+        display:none;
+    }
+    /* 最新賽事 */
     .newspreview{
         width:100%;
         padding:20px;
@@ -133,37 +132,35 @@
     .bn50{
         bottom:5%;
     }
-    .banner .container2 img{
-        width: 768px;
-        padding:5%;
-    }
-
-    .tmpitcher{
+/* 隔天先發 */
+    .pitcher{
         width:100%;
     }
-    .tmpitcher .item img{
-        width:340px;
+    .pitcher .pic img{
+        width:350px;
         height: 260px;
     }
-    .tmpitcher p{
+    .pitcher .pic1 img{
+        width:350px;
+        height: 260px;
+    }
+    .pitcher p{
         width: 100%;
       }
+    /* 頁尾區 */
     footer{
         width:100%;
     }
-    .prev{
-        display:none;
-    }
-    .next{
-        display:none;
-    }
+ 
 } 
 
 /* 手機版 */
 @media screen and (max-width:768px){
+    /* 今日天氣 */
     .weather{
         display:none;
     }
+    /* 最新賽事 */
     .newspreview{
         width:100%;
         padding:20px;
@@ -175,34 +172,37 @@
     .newgame .pic img{
         width:100%;
     }
-    .tmpitcher {
+
+    /* 明日先發 */
+    .pitcher {
         display: grid;
         margin-top: 25px;
     }
-    .tmpitcher .item img{
+    .pitcher .pic img{
        width:100%;
     }
+    /* 頁尾區 */
     footer{
         width:100%;
     }
+    /* 幻燈片 */
     .prev{
         display:none;
     }
     .next{
         display:none;
     }
+    /* 主選單 */
     .hb{
         width: 40px;
         height: 40px;
-        background-color: #000;
+        background-color: white;
         position: relative;
-        top:0;
-        left:0;
     }
     .hb span{
         width: 32px;
         height: 2px;
-        background-color: #fff;
+        background-color: black;
         position: absolute;
         right: 0;
         left: 0;
@@ -224,9 +224,6 @@
         top: 0;
         bottom: 0;
     }
-
-
-
     #menu-control:checked ~ .main-header .hb span:first-child{
         top: 19px;
         transform: rotate(225deg);
@@ -250,10 +247,6 @@
     #menu-control:checked ~ .main-header .hb span:nth-child(2){
         opacity: 0;
     }
-
-
-
-
     .main-nav{
         position: absolute;
         background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
@@ -296,4 +289,5 @@
         position:relative;
         vertical-align: middle;
       }
+   
 }

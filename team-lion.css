@@ -8,6 +8,7 @@
 body{
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
+/* 主選單 */
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
@@ -39,6 +40,16 @@ body{
 #menu-control{
   display: none;
 }
+nav a{
+  font-size:16px;
+  font-weight: 800;
+  margin:10px;
+}
+nav a:hover{
+  border-bottom: 3px solid black;
+}
+
+/* 幻燈片 */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -109,25 +120,7 @@ body{
 .dot:hover {
   background-color: #717171
 }
-
-nav a{
-  font-size:16px;
-  font-weight: 800;
-  margin:10px;
-}
-nav a:hover{
-  border-bottom: 3px solid black;
-}
-
-.container2 {
-   margin:auto;
-   width:500px;
-   max-width: 500px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
+/* 最新消息 */
 table {
     width: 100%;
     max-width: 100%;
@@ -152,6 +145,7 @@ td {
     border: solid 1px black;
     padding: 10px;
 }
+/* 現場天氣 */
 .weather img{
     width:55px;  
     padding:6px;
@@ -173,7 +167,7 @@ td {
     font-size:13px;
     padding: 8px;
 }
-
+/* 近期賽事 */
 .newgame {
   display:flex;
   justify-content:center;
@@ -202,8 +196,8 @@ td {
    text-decoration: underline;
    margin-top:40px;
 }
-
-.tmpitcher {
+/* 隔天先發 */
+.pitcher {
   position: relative;
   align-content: center;
   align-items: center;
@@ -216,14 +210,20 @@ td {
   padding:5px;
   gap:40px;
 }
-.tmpitcher .item img {
+.pitcher .pic img {
     max-width: 381px;
     width: 381px;
     height: 257px;
     
   }
-.tmpitcher p{
-  font-size: 20px;
+  .pitcher .pic1 img {
+    max-width: 381px;
+    width: 381px;
+    height: 257px;
+    
+  }
+.pitcher p{
+  font-size: 25px;
   font-weight: 700;
   text-align: center;
 }
@@ -370,6 +370,7 @@ td {
       transform: translate3d(0, 0, 0) translateZ(0);
     }
   }
+  /* 頁尾 */
   footer {
     text-align: center;
     padding: 3px;

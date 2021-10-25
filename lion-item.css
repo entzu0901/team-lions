@@ -13,19 +13,18 @@ body{
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
-.main-header .container{
+.main-header .homepage{
   display: flex;
   padding: 0px;
   max-width: 1000px;
-  margin-left: 180px;
   align-items: center;
   gap:10px;
   z-index: 20;
+  margin:auto;
 }
 .main-header .logo{
   width:150px;
   max-width: 150px;
-  margin-left: 90px;
 }
 .main-header .logo img{
   width:150px;
@@ -63,6 +62,9 @@ nav a:hover{
 .shop img {
   max-width: 100%;
 }
+.hero img{
+  width:100%;
+}
 .shop p {
   font-size: 18px;
   font-weight: 600;
@@ -70,14 +72,6 @@ nav a:hover{
 .shop .button{
   display:flex;
   gap:5px;
-}
-.container1 {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction: row;
-  margin-top:105px;
-  gap:50px;
 }
 .bn54 {
   position: relative;   
@@ -197,36 +191,9 @@ footer{
   position: relative;
   margin: auto
 }
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
 
-  font-weight: bold;
-  font-size: 30px;
-  transition: .6s ease;
-  border-radius: 0 3px 3px 0
-}
 
-.next {
-  right: -50px;
-  border-radius: 3px 3px 3px 3px
-}
 
-.prev {
-  left: -50px;
-  border-radius: 3px 3px 3px 3px
-}
-
-.prev:hover,
-.next:hover {
-  color: #f2f2f2;
-  background-color: rgba(0, 0, 0, 0.8)
-}
 
 .text {
   color: #f2f2f2;
