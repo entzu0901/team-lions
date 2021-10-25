@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Teko', sans-serif;
     list-style: none;
+    box-sizing: border-box;
 }
 body{
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
@@ -14,10 +15,10 @@ body{
   display: flex;
   padding: 0px;
   max-width: 1000px;
-  margin-left: 180px;
   align-items: center;
   gap:10px;
   z-index: 20;
+  margin:auto;
 }
 .main-header .logo{
   width:150px;
@@ -32,6 +33,11 @@ body{
   text-decoration: none;
   color:white;
   padding:5px;
+}
+
+
+#menu-control{
+  display: none;
 }
 .slideshow-container {
   max-width: 1000px;
@@ -197,10 +203,10 @@ td {
    margin-top:40px;
 }
 
-* {box-sizing: border-box;}
-
-.container8 {
+.tmpitcher {
   position: relative;
+  align-content: center;
+  align-items: center;
   width: 100%;
   max-width: 600px;
   justify-content: center;
@@ -208,55 +214,21 @@ td {
   display: flex;
   margin: auto;
   padding:5px;
+  gap:40px;
 }
-.container8 .pic img {
-    max-width: 385px;
-    width: 385px;
-    margin-right: 20px;
+.tmpitcher .item img {
+    max-width: 381px;
+    width: 381px;
+    height: 257px;
+    
   }
-.container8 .pic1 img{
-  max-width: 386px;
-  width: 386px;
-  height: 257px;
-  margin-left: 20px;
+.tmpitcher p{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
 }
-  .overlay {
-    position: absolute; 
-    bottom: 0;
-    right:400px; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1; 
-    width: 30%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  }
   
-  .container8:hover .overlay {
-    opacity: 1;
-  }
-  .overlay1 {
-    position: absolute; 
-    bottom: 0;
-    left:410px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); 
-    color: #f1f1f1; 
-    width: 30%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 22px;
-    text-align: center;
-  }
-  .container8:hover .overlay1 {
-    opacity: 1;
-  }
+
   .bn54 {
     position: relative;
     outline: none;
@@ -406,6 +378,4 @@ td {
     font-weight: 600;
     margin-top: 50px;
   }
-  #menu-control{
-    display: none;
-}
+ 

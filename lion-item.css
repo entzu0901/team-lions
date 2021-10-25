@@ -3,24 +3,13 @@
   padding:0;
   list-style: 0;
   font-family: 'Teko', sans-serif;
+  box-sizing: border-box;
 }
 
 body{
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
-.shopbanner{
-    width: 100%;
-}
-.shopbanner .pic{
-    width: 1000px;
-    margin:auto; 
-}
-.shopbanner .pic img{
-    width: 1000px;
-    margin-top: 20px;
-    border-radius:15px 15px 15px 15px;
-}
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
@@ -58,109 +47,108 @@ nav a:hover{
 
 
 .shop {
-    align-content: center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: row;
-    margin-top:45px;
-    gap:50px;
-  }
+  align-content: center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: row;
+  margin-top:45px;
+  gap:50px;
+}
 
-.pic img{
-    width:400px;
+.shop > div {
+  max-width: 400px;
 }
-.hu img{
-    width:400px;
+
+.shop img {
+  max-width: 100%;
 }
-.hero img{
-    width:400px;
+.shop p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.shop .button{
+  display:flex;
+  gap:5px;
 }
 .container1 {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: row;
-    margin-top:105px;
-    gap:50px;
-  }
-  .bn54 {
-    position: relative;   
-    text-decoration: none;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    height: 45px;
-    width: 80px;
-    opacity: 1;
-    background-color: orange;
-    border: 1px solid rgba(0, 0, 0, 0.6);
-    margin:5px 0px 10px 0px;
-    
-  }
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: row;
+  margin-top:105px;
+  gap:50px;
+}
+.bn54 {
+  position: relative;   
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 45px;
+  width: 80px;
+  opacity: 1;
+  background-color: orange;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  margin:5px 0px 10px 0px;
   
-  .bn54 .bn54span {
-    font-family: 'Teko', sans-serif;
-    color: #000000;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.7px;
+}
+
+.bn54 .bn54span {
+  font-family: 'Teko', sans-serif;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.bn54:hover {
+  animation: bn54rotate 0.7s ease-in-out both;
+}
+
+.bn54:hover .bn54span {
+  animation: bn54storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+@keyframes bn54rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
   }
-  
-  .bn54:hover {
-    animation: bn54rotate 0.7s ease-in-out both;
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
   }
-  
-  .bn54:hover .bn54span {
-    animation: bn54storm 0.7s ease-in-out both;
-    animation-delay: 0.06s;
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
   }
-  .button{
-    display:flex;
-    position: relative;
-    bottom: 40px;
-    left:240px;
-    gap:5px;
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
   }
-  @keyframes bn54rotate {
-    0% {
-      transform: rotate(0deg) translate3d(0, 0, 0);
-    }
-    25% {
-      transform: rotate(3deg) translate3d(0, 0, 0);
-    }
-    50% {
-      transform: rotate(-3deg) translate3d(0, 0, 0);
-    }
-    75% {
-      transform: rotate(1deg) translate3d(0, 0, 0);
-    }
-    100% {
-      transform: rotate(0deg) translate3d(0, 0, 0);
-    }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
   }
-  
-  @keyframes bn54storm {
-    0% {
-      transform: translate3d(0, 0, 0) translateZ(0);
-    }
-    25% {
-      transform: translate3d(4px, 0, 0) translateZ(0);
-    }
-    50% {
-      transform: translate3d(-3px, 0, 0) translateZ(0);
-    }
-    75% {
-      transform: translate3d(2px, 0, 0) translateZ(0);
-    }
-    100% {
-      transform: translate3d(0, 0, 0) translateZ(0);
-    }
+}
+
+@keyframes bn54storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
   }
- .pic span{
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+.pic span{
   font-weight: 800;
   font-size: 25px;
 }
@@ -171,18 +159,6 @@ nav a:hover{
 .hero span{
   font-weight: 800;
   font-size: 25px;
-}
-.pic p{
-  font-size:25px;
-  font-weight: bold;
-}
-.hu p{
-  font-size:25px;
-  font-weight: bold;
-}
-.hero p{
-  font-size:25px;
-  font-weight: bold;
 }
  .pic span:hover{
   color:darkorange;
@@ -285,4 +261,8 @@ footer{
 .active,
 .dot:hover {
   background-color: #717171
+}
+
+.hb {
+  display: none;
 }

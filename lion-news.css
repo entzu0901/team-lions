@@ -5,14 +5,16 @@
 }
 body{
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    
 }
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+  width:100%;
 }
 .main-header .container{
   display: flex;
   padding: 0px;
-  max-width: 1000px;
+  width:100%;
   margin-left: 180px;
   align-items: center;
   gap:10px;

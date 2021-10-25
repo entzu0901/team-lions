@@ -1,3 +1,10 @@
+@media screen and (max-width:1024px) {
+    .hb {
+        display: block;
+    }
+}
+
+
 /*平板 */
 @media screen and (min-width:768px)and (max-width:1024px){ 
     .hb{
@@ -5,7 +12,6 @@
         height: 40px;
         background-color: #000000;
         position: relative;
-        left:280px;
     }
     .hb span{
         width: 32px;
@@ -103,11 +109,13 @@
         display: none;
     }
     .main-header .logo img{
-        width:80px;
+        width:100px;
         vertical-align: middle;
         position:relative;
-        right:280px;
       }
+    .next{
+        display:none;
+    }
     .newspreview{
         width:100%;
         padding:20px;
@@ -130,36 +138,66 @@
         padding:5%;
     }
 
-    .container8{
+    .tmpitcher{
         width:100%;
     }
-    .container8 .pic img{
+    .tmpitcher .item img{
         width:340px;
         height: 260px;
     }
-   
+    .tmpitcher p{
+        width: 100%;
+      }
     footer{
         width:100%;
     }
-    .overlay{
+    .prev{
         display:none;
     }
-    .overlay1{
+    .next{
         display:none;
     }
-  
-}
+} 
+
 /* 手機版 */
-@media screen and (min-width:375px)and (max-width:768px){
-    *{
-        margin:0;
-        padding:0;
+@media screen and (max-width:768px){
+    .weather{
+        display:none;
+    }
+    .newspreview{
+        width:100%;
+        padding:20px;
+    }
+    .newgame{
+        width:100%;
+        padding:10px;
+    }
+    .newgame .pic img{
+        width:100%;
+    }
+    .tmpitcher {
+        display: grid;
+        margin-top: 25px;
+    }
+    .tmpitcher .item img{
+       width:100%;
+    }
+    footer{
+        width:100%;
+    }
+    .prev{
+        display:none;
+    }
+    .next{
+        display:none;
     }
     .hb{
         width: 40px;
         height: 40px;
         background-color: #000;
         position: relative;
+        top:0;
+        left:0;
     }
     .hb span{
         width: 32px;
@@ -253,56 +291,9 @@
         display: none;
     }
     .main-header .logo img{
-        width:80px;
-        vertical-align: middle;
+        width:100px;
+        right:130px;
         position:relative;
-        right:280px;
         vertical-align: middle;
       }
-    .weather{
-        display:none;
-    }
-    .newspreview{
-        width:100%;
-        padding:20px;
-    }
-    .newgame{
-        width:100%;
-        padding:10px;
-    }
-    .newgame .pic img{
-        width:100%;
-    }
-    .bn50{
-        bottom:30px;;
-    }
-    .overlay{
-        display:none;
-    }
-    .overlay1{
-        display:none;
-    }
-    .container8 {
-        width:100%;
-        margin: 0 auto;
-        display: grid;
-        margin-top: 25px;
-    }
-    .container8 .pic1 img{
-       margin-left:0px;
-    }
-    footer{
-        width:100%;
-    }
-    .prev{
-        display:none;
-    }
-    .next{
-        display:none;
-    }
 }
-
-
-
-
-

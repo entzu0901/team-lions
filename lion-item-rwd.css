@@ -1,3 +1,11 @@
+@media screen and (max-width:1024px) {
+    .hb {
+        display: block;
+    }
+}
+
+
+
 /*平板 */
 @media screen and (min-width:768px)and (max-width:1024px){ 
     .hb{
@@ -5,7 +13,6 @@
         height: 40px;
         background-color: #000000;
         position: relative;
-        left:280px;
     }
     .hb span{
         width: 32px;
@@ -96,6 +103,15 @@
         padding: 4px 10px;
         position: relative;
     }
+    .main-header .container{
+        display: flex;
+        padding: 0px;
+        max-width: 1000px;
+        margin-left: 180px;
+        align-items: center;
+        gap:10px;
+        z-index: 20;
+      }
     .logo img{
         vertical-align: middle;
     }
@@ -109,6 +125,20 @@
         right:280px;
       }
     }
+    .next{
+        display:none;
+    }
+    .shop {
+        align-content: center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: row;
+        margin-top:45px;
+        gap:50px;
+        padding:20px;
+      }
+    
       /* 手機版 */
 @media screen and (max-width:768px){
     .hb{
@@ -199,6 +229,15 @@
         padding: 4px 10px;
         position: relative;
     }
+    .main-header .container{
+        display: flex;
+        padding: 0px;
+        max-width: 1000px;
+        margin-left: 180px;
+        align-items: center;
+        gap:10px;
+        z-index: 20;
+      }
     .main-nav img{
         display: block;
         width:40px;

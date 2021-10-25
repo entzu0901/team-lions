@@ -108,7 +108,7 @@
         position:relative;
         right:280px;
       }
-      }
+    }
       /* 手機版 */
 @media screen and (max-width:768px){
     .hb{
@@ -215,9 +215,6 @@
         right:280px;
         vertical-align: middle;
       }
-
-
-
 }
 
 
