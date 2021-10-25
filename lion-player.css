@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Teko', sans-serif;
     list-style: none;
+    box-sizing: border-box;
 }
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
@@ -11,15 +12,14 @@
   display: flex;
   padding: 0px;
   max-width: 1000px;
-  margin-left: 180px;
   align-items: center;
   gap:10px;
   z-index: 20;
+  margin:auto;
 }
 .main-header .logo{
   width:150px;
   max-width: 150px;
-  margin-left: 90px;
 }
 .main-header .logo img{
   width:150px;
@@ -46,8 +46,7 @@ body {
     
   }
 .chen img {
-    width: 190%;
-    height: 100%;
+    width: 250px;
     object-fit:cover;
     -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
     transform-origin:center;
@@ -59,7 +58,7 @@ body {
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:160px;
+    gap:55px;
     flex-direction: row;
     margin: auto;
   }
@@ -96,7 +95,7 @@ body {
     opacity:1;
   }
   .hu img {
-    width: 190%;
+    width: 250px;
     height: 100%;
     object-fit:cover;
     -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
@@ -105,15 +104,13 @@ body {
     transition:0.5s;
   }
   .kuo img {
-    width: 190%;
-    height: 100%;
+    width: 250px;
     object-fit:cover;
     -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
     transform-origin:center;
     transform:perspective(800px) rotateY(25deg);
     transition:0.5s;
   }
-
   .container1:hover p {
         opacity:0.3;
       }
@@ -122,7 +119,7 @@ body {
         opacity:1;
       }
    
-    .pagination a {
+  .pagination a {
     color: black;
     float: left;
     padding: 8px 16px;
