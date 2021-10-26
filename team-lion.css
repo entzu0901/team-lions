@@ -370,7 +370,7 @@ td {
     }
   }
   /* 頁尾 */
-  footer {
+ footer {
     text-align: center;
     padding: 3px;
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
@@ -378,4 +378,7 @@ td {
     font-weight: 600;
     margin-top: 50px;
   }
- 
+footer img{
+  margin-right:10px;
+}
+

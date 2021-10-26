@@ -9,6 +9,7 @@
 body{
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
+/* 主選單 */
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
@@ -16,15 +17,14 @@ body{
   display: flex;
   padding: 0px;
   max-width: 1000px;
-  margin-left: 180px;
   align-items: center;
   gap:10px;
   z-index: 20;
+  margin: auto;
 }
 .main-header .logo{
   width:150px;
   max-width: 150px;
-  margin-left: 90px;
 }
 .main-header .logo img{
   width:150px;
@@ -43,21 +43,24 @@ nav a{
 nav a:hover{
   border-bottom: 3px solid black;
 }
-
-.pricepicture .pic {
+#menu-control{
+  display: none;
+}
+/* 票價圖 */
+.pt {
     margin:auto;
-    width: 800px;
     display:flex;
     justify-content:center;
     align-items:center;
 }
-.pricepicture .pic img{
-    width: 1500px;
-    height:800px;    
+.pt .pic img{
+    width: 800px;
+    max-width: 800px;
 }
+/* 票價表格 */
 table{
-    width: 70%;
-    border: 5px solid #ddd;
+    width: 700px;
+    max-width: 700px;
     margin-top:40px;
 }
 .center{
@@ -68,54 +71,63 @@ th, td, tr {
     text-align: center;
     padding: 16px;
     border: 2px solid black;
-  
   }
-  td{
+td{
     font-weight:700;
   }
- .faq{
+/* 問與答 */
+h1{
     text-align: center;
-    margin-top: 70px;
-}
+    font-size: 33px;
+    padding-bottom: 0.25em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 
-
-.faq-main{
-    padding: 0px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(204, 196, 196);
-}
-
-::-webkit-details-marker{
-    float: right;
-    margin-top: 3px;
-}
-
-details{
-    padding: 5px 20px;
-    border-radius: 7px;
-    margin-top: 15px;
-    cursor: pointer;
-    letter-spacing: 1px;
-}
-
-summary{
-    font-size: 20px;
-    font-weight: 800;
+  details{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
     border: 3px solid black;
+  }
+  summary{
+    font-size: 1.25rem;
+    font-weight: 800;
+    cursor: pointer; 
+    position: relative;
+    outline: none;
     color:black;
-
+  }
+  summary::after{
+    content: "🔻";
+    padding: 0.5rem;
+    position: absolute;
+    right: 0.25rem;
+    top: -0.5rem;
+    color: whitesmoke;
+  }
+  details[open]{
+    background: whitesmoke;
+  }
+  details[open] summary{
+  color: black;
 }
+  details[open] summary::after{
+    content: "🔺";
+  }
 
-details p{
-    padding: 20px 20px;
-    font-size: 17px;
-    font-weight: 700;
-    color:red;
-    border-radius:1px;
-    border: 1px solid black;
-} 
+  details p{
+    color: dimgrey;
+    padding:15px;
+    font-size:22px;
+  }
+  .question{
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    margin: auto;
+  }
+  /* 頁尾區  */
 footer {
     text-align: center;
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
@@ -126,10 +138,6 @@ footer {
     justify-content:center;
     align-items:center;
   }
-.footertxt p{
-    font-size:15px;
-    padding: 1px;
-  }
-  #menu-control{
-    display: none;
+footer img{
+  margin-right:10px;
 }
