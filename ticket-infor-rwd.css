@@ -15,7 +15,7 @@
     .hb span{
         width: 32px;
         height: 2px;
-        background-color: #fff;
+        background-color: orange;
         position: absolute;
         right: 0;
         left: 0;
@@ -111,6 +111,7 @@
         width:80px;
         vertical-align: middle;
         position:relative;
+        right:280px;
       }
     .pt .pic img{
         width:100%;
@@ -135,11 +136,12 @@
         height: 40px;
         background-color: #000;
         position: relative;
+        right:-80px;
     }
     .hb span{
         width: 32px;
         height: 2px;
-        background-color: #fff;
+        background-color: orange;
         position: absolute;
         right: 0;
         left: 0;
@@ -231,6 +233,7 @@
         width:80px;
         vertical-align: middle;
         position:relative;
+        right:90px;
       }
     .pt{
         padding:10px;

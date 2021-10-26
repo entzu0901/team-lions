@@ -43,75 +43,69 @@ nav a:hover{
 }
 .newbanner{
   max-width: 1200px;
-  display:flex;
-}
-.newbanner .pic{
-  max-width: 600px;
-  margin:auto; 
+  margin: auto;
 }
 .newbanner .pic img{
-  max-width: 950px;
+  width:100%;
   margin-top: 20px;
   border-radius:15px 15px 15px 15px;
 }
-div.grid_container{
-  background-color: #eaecf2;
-  /* border: 1px solid red; */
-  width: 1000px;
-  height:350px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 600px auto;
-  gap: 0px;
-  margin-top: 25px;
-  border-radius: 15px 15px 15px 15px;
-}
-div.grid_item1{
-  /* border: 1px solid blue; */
-  width: 350px;
-  height: 120px;
-  border-radius: 15px 15px 15px 15px;
-}
-.news_photo {
-  width: 520px;
-  height: 350px;
-  border-radius: 15px 0px 0px 15px;
-}
-.grid_item2{
-  height: 150px;
-  margin: auto;
-  margin-left: -20px;
-  letter-spacing: 2px;
-  
-}
 
-div.grid_item2 h4{
-  font-size: 16px;
-  display: inline-block;
-  border:1.5px solid #FF9B2F;
-  background-color: rgb(255, 255, 255);
-  color: #FF9B2f;
-  border-radius: 3px;
-  padding: 1px 8px;
-  border-radius: 5px;
-  line-height: 24px;
-  }
+.txt p{
+  padding:5px;
+}
+.txt p:last-child{
+  color:red;
+  font-weight: 700;
+}
+.mainnews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainnews :hover{
+  color:tomato;
+}
+.mainnews .pic img{
+  max-width:600px;
+}
+.mainnews .pic3 img{
+  max-width:600px;
+}
+.item{
+  padding:15px;
+  background-color: white;
+}
 .container1{
     justify-content: center;
     flex-direction: row;
     display: flex;
     margin: auto;
-    width: 80%;
+    width: 100%;
+}
+.container2{
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  margin: auto;
+  width: 100%;
 }
 .news2 .pic1 img{
     width: 100%;
 }
 .container1 .news2{
-    width: 50%;
+    width: 100%;
     background-color: rgb(236, 233, 233);
     margin:15px;
     border-radius: 0px 0px 15px 15px;
     border:1px solid black;
+}
+.container2 .news2{
+  width: 100%;
+  background-color: rgb(236, 233, 233);
+  margin:15px;
+  border-radius: 0px 0px 15px 15px;
+  border:1px solid black;
 }
 footer {
     text-align: center;

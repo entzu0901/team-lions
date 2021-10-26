@@ -141,3 +141,27 @@ footer {
 footer img{
   margin-right:10px;
 }
+.family::before{
+  content:"●";
+  color:blue;
+}
+.diamond::before{
+  content:"●";
+  color:purple;
+}
+.couple::before{
+  content:"●";
+  color:pink;
+}
+.baby::before{
+  content:"●";
+  color:orange;
+}
+.beef::before{
+  content:"●";
+  color:lightgreen;
+}
+.coffee::before{
+  content:"●";
+  color:brown;
+}

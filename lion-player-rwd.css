@@ -18,7 +18,7 @@
     .hb span{
         width: 32px;
         height: 2px;
-        background-color: #fff;
+        background-color: orange;
         position: absolute;
         right: 0;
         left: 0;
@@ -125,6 +125,21 @@
      }
      footer{
          width:100%;
+     }
+     .chen img{
+        z-index:-1;
+        -webkit-box-reflect:unset;
+        transform: unset;
+     }
+     .hu img {
+         z-index:-1;
+         -webkit-box-reflect:unset;
+         transform: unset;
+     }
+     .kuo img{
+         z-index:-1;
+         -webkit-box-reflect:unset;
+         transform: unset;
      }
     }
     @media screen and (max-width:767px){
