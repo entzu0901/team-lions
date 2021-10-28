@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: 0;
     box-sizing: border-box;
 }
 .main-header{
@@ -11,15 +10,14 @@
   display: flex;
   padding: 0px;
   max-width: 1000px;
-  margin-left: 180px;
   align-items: center;
   gap:10px;
   z-index: 20;
+  margin:auto;
 }
 .main-header .logo{
   width:150px;
   max-width: 150px;
-  margin-left: 90px;
 }
 .main-header .logo img{
   width:150px;
@@ -66,22 +64,19 @@ h2{
     align-items:center;
     margin-bottom:70px;
 }
-.item1 .pic img{
-    width:700px;
-    max-width: 700px;
+.item1 .ball img{
+    width:550px;
+    max-width: 550px;
     vertical-align: middle;
-}
-.item1 .pic{
-    width: 50%;
-    flex-shrink: 0;
 }
 .item1 .pic1 img{
    width:550px;
    max-width: 550px;
+   vertical-align: middle;
 }
 .item1 .txt{
     width:600px;
-    min-width: 600px;
+    max-width: 600px;
     padding:50px 30px;
     box-sizing:border-box;
     position: relative;
@@ -89,7 +84,7 @@ h2{
     flex-shrink: 0;
 }
 .item1 >:first-child{
-    margin-right: -13%;
+    margin-right: -100px; 
 }
 .item1:nth-child(1) .txt{
     background-color: rgb(182, 168, 160,.8)
@@ -98,96 +93,100 @@ h2{
     background-color: rgba(254, 201, 121, .8);
 }
  
-  .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-   
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  .container5 {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 620px;
-  }
-  
+.container5 {
+  position: relative;
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
 
-  .container5::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right:3px;
-    background-color: black;
-    border: 4px solid #FF9F55;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
+/*Line*/
+.container5::before {
+  content: '';
+  position: absolute;
+  left: 580px;
+  height: 100%;
+  width: 3px;
+  background-color: #000;
+}
 
-  .left {
-    left: 0;
-  }
-  
-  .right {
-    left: 50%;
-  }
-  
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
-  
-  
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-  
-  .right::after {
-    left: -16px;
-  }
-  
-  
-  .content {
-    padding: 20px ;
-    background-color: white;
-    width:500px;
-    border-radius: 6px;
-  }
-  .container5 .pic1 img{
-      width: 550px;
-  }
-  .container5 .pic9 img{
-      width: 550px;
-  }
+.section-container:first-child {
+  padding-bottom: 110px;
+}
+
+.section-container {
+  position: relative;
+  clear: both;
+  margin-bottom: 100px;
+  padding-bottom: 70px;
+}
+
+/*Triangles*/
+.right::before,
+.left::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  height: 0;
+  width: 0px;
+  border: 7px solid transparent;
+}
+
+.left::before {
+  border-left: 7px solid #000;
+  right: 628px;
+}
+
+.right::before {
+  border-right: 7px solid #000;
+  left: 628px;
+}
+
+.section {
+  width: 40%;
+  border-radius: 0.3em;
+  padding: 0 30px;
+  background-color: #000;
+  color: #fff;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+p {
+  line-height: 1.5;
+}
+/*Circles*/
+.circle {
+  position: absolute;
+  top: 0;
+  left: 559px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #000;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 2.6em;
+}
+.section-container img{
+  width:100%;
+}
+
+/*Animation*/
+
+
+
+
+
   footer {
     text-align: center;
     padding: 3px;
