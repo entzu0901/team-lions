@@ -1,159 +1,161 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Teko', sans-serif;
+    font-family: "Teko", sans-serif;
     list-style: none;
     box-sizing: border-box;
 }
-.main-header{
-  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
-}
-.main-header .homepage{
-  display: flex;
-  padding: 0px;
-  max-width: 1000px;
-  align-items: center;
-  gap:10px;
-  z-index: 20;
-  margin:auto;
-}
-.main-header .logo img{
-  width:150px;
-  vertical-align: middle;
-}
-.main-header .main-nav a{
-  text-decoration: none;
-  color:white;
-  padding:5px;
-}
-nav a{
-  font-size:16px;
-  font-weight: 800;
-  margin:10px;
-}
-nav a:hover{
-  border-bottom: 3px solid black;
-}
-
 body {
-  
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-    place-items:center;
-    
-  }
+    place-items: center;
+}
+/* 導覽列 */
+.main-header {
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+}
+.main-header .homepage {
+    display: flex;
+    padding: 0px;
+    max-width: 1000px;
+    align-items: center;
+    gap: 10px;
+    z-index: 20;
+    margin: auto;
+}
+.main-header .logo img {
+    width: 150px;
+    vertical-align: middle;
+}
+.main-header .main-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+nav a {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 10px;
+}
+nav a:hover {
+    border-bottom: 3px solid black;
+}
+#menu-control {
+    display: none;
+}
+/* 球員介紹 */
 .chen img {
     width: 250px;
-    object-fit:cover;
-    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
-    transform-origin:center;
-    transform:perspective(800px) rotateY(25deg);
-    transition:0.5s;
-   
-  }
-  .container1 {
-    width:800px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:55px;
+    object-fit: cover;
+    -webkit-box-reflect: below 2px
+        linear-gradient(transparent, transparent, #0004);
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 0.5s;
+}
+.container1 {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
     flex-direction: row;
     margin: auto;
-  }
-  .container1:hover img {
-    opacity:0.3;
-  }
-  .container1 img:hover {
-    transform:perspective(800px)  rotateY(0deg);
-    opacity:1;
-  }
-  .hu p{
-    width:80px; 
+}
+.container1:hover img {
+    opacity: 0.3;
+}
+.container1 img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
+.hu p {
+    width: 80px;
     font-weight: 700;
     font-size: 22px;
-    color:black;
-    margin:15px;
-  }
-  .chen p{
-    width:80px; 
+    color: black;
+    margin: 15px;
+}
+.chen p {
+    width: 80px;
     font-weight: 700;
     font-size: 22px;
-    color:black;
-    margin:15px;
-  }
-  .kuo p{
-    width:70px; 
+    color: black;
+    margin: 15px;
+}
+.kuo p {
+    width: 70px;
     font-weight: 700;
     font-size: 22px;
-    color:black;
-    margin:15px;
-  }
-  p:hover{
-    transform:perspective(800px)  rotateY(0deg);
-    opacity:1;
-  }
-  .hu img {
+    color: black;
+    margin: 15px;
+}
+p:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
+.hu img {
     width: 250px;
     height: 100%;
-    object-fit:cover;
-    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
-    transform-origin:center;
-    transform:perspective(800px) rotateY(25deg);
-    transition:0.5s;
-  }
-  .kuo img {
+    object-fit: cover;
+    -webkit-box-reflect: below 2px
+        linear-gradient(transparent, transparent, #0004);
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 0.5s;
+}
+.kuo img {
     width: 250px;
-    object-fit:cover;
-    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
-    transform-origin:center;
-    transform:perspective(800px) rotateY(25deg);
-    transition:0.5s;
-  }
-  .container1:hover p {
-        opacity:0.3;
-      }
-  .container1 p:hover {
-        transform:perspective(800px)  rotateY(0deg);
-        opacity:1;
-      }
-   
-  .pagination a {
+    object-fit: cover;
+    -webkit-box-reflect: below 2px
+        linear-gradient(transparent, transparent, #0004);
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 0.5s;
+}
+.container1:hover p {
+    opacity: 0.3;
+}
+.container1 p:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
+/* 換頁區 */
+.pagination a {
     color: black;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
-    transition: background-color .3s;
+    transition: background-color 0.3s;
     position: relative;
-    right:-50px;
-  }
-  
+    right: -50px;
+}
 
-  .pagination a.active {
+.pagination a.active {
     background-color: goldenrod;
     color: white;
-  }
-  
-  .pagination{
-    margin:auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
-  .pagination a:hover:not(.active) {background-color: #ddd;}
-  
-  footer {
+}
+
+.pagination {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+/* 頁尾區 */
+footer {
     text-align: center;
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     color: black;
     font-weight: 600;
     margin-top: 20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
-  .footertxt p{
-    font-size:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footertxt p {
+    font-size: 15px;
     padding: 1px;
-  }
-  #menu-control{
-    display: none;
 }

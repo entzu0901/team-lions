@@ -1,68 +1,55 @@
 /*平板 */
-@media screen and (min-width:768px)and (max-width:1024px){ 
-    .hb{
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .hb {
         width: 40px;
         height: 40px;
         background-color: #000000;
         position: relative;
-        left:280px;
+        right: -280px;
     }
-    .hb span{
+    .hb span {
         width: 32px;
         height: 2px;
-        background-color: #fff;
+        background-color: orange;
         position: absolute;
         right: 0;
         left: 0;
         margin: auto;
-        transition: top     .5s .2s, 
-                    bottom  .5s .2s, 
-                    opacity .5s, 
-                    transform .2s;
+        transition: top 0.5s 0.2s, bottom 0.5s 0.2s, opacity 0.5s,
+            transform 0.2s;
     }
-    .hb span:first-child{
+    .hb span:first-child {
         transform: rotate(0deg);
         top: 10px;
     }
-    .hb span:last-child{
+    .hb span:last-child {
         transform: rotate(0deg);
         bottom: 10px;
     }
-    .hb span:nth-child(2){
+    .hb span:nth-child(2) {
         top: 0;
         bottom: 0;
     }
 
-
-
-    #menu-control:checked ~ .main-header .hb span:first-child{
+    #menu-control:checked ~ .main-header .hb span:first-child {
         top: 19px;
         transform: rotate(225deg);
-        transition: top     .5s, 
-                    bottom  .5s, 
-                    opacity .5s, 
-                    transform .2s .5s;
+        transition: top 0.5s, bottom 0.5s, opacity 0.5s, transform 0.2s 0.5s;
     }
-    #menu-control:checked ~ .main-header .hb span:last-child{
+    #menu-control:checked ~ .main-header .hb span:last-child {
         bottom: 19px;
         transform: rotate(-225deg);
-        transition: top     .5s, 
-                    bottom  .5s, 
-                    opacity .5s, 
-                    transform .2s .5s;
+        transition: top 0.5s, bottom 0.5s, opacity 0.5s, transform 0.2s 0.5s;
     }
 
-    .hb span:nth-child(2){
+    .hb span:nth-child(2) {
         opacity: 1;
     }
-    #menu-control:checked ~ .main-header .hb span:nth-child(2){
+    #menu-control:checked ~ .main-header .hb span:nth-child(2) {
         opacity: 0;
     }
 
-
-
-
-    .main-nav{
+    .main-nav {
         position: absolute;
         background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
         top: 100%;
@@ -71,24 +58,23 @@
         height: calc(100vh - 50px);
         transition: left 1s;
     }
-    .main-nav a{
+    .main-nav a {
         display: block;
         padding: 5px 10px;
-        
     }
-    .main-header .main-nav a{
-        color:black;
+    .main-header .main-nav a {
+        color: black;
     }
-    .main-nav img{
+    .main-nav img {
         display: block;
-        width:40px;
+        width: 40px;
         padding: 5px 10px;
-        margin-left:10px;
+        margin-left: 10px;
     }
-    #menu-control:checked ~ .main-header .main-nav{
+    #menu-control:checked ~ .main-header .main-nav {
         left: 0;
     }
-    .main-header{
+    .main-header {
         display: flex;
         background-color: #888;
         align-items: center;
@@ -96,82 +82,219 @@
         padding: 4px 10px;
         position: relative;
     }
-    .logo img{
+    .logo img {
         vertical-align: middle;
     }
-    #menu-control{
+    #menu-control {
         display: none;
     }
-    .main-header .logo img{
-        width:80px;
+    .main-header .logo img {
+        width: 80px;
         vertical-align: middle;
-        position:relative;
-      }
+        position: relative;
+        right: 280px;
     }
-    /* 手機版 */
-@media screen and (max-width:767px){
-    .hb{
+    /* 球場大圖 */
+    .bbplace .pic img {
+        width: 100%;
+    }
+    /* 球隊標語 */
+    .slogan-image {
+        width: 100%;
+    }
+    .item {
+        width: 100%;
+    }
+    /* 球場設施 */
+    .container3 {
+        width: 100%;
+    }
+    .item .pic img {
+        width: 100%;
+    }
+    .txt p {
+        font-size: 1em;
+        color: tomato;
+    }
+    .middle {
+        opacity: 1;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .middle1 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .middle2 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .middle3 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .container3:hover img {
+        opacity: unset;
+    }
+
+    .container3:hover .middle {
+        opacity: unset;
+    }
+    .container3:hover .middle1 {
+        opacity: unset;
+    }
+    .container3:hover .middle2 {
+        opacity: unset;
+    }
+    .container3:hover .middle3 {
+        opacity: unset;
+    }
+    .txt h2 {
+        padding-top: 7px;
+    }
+    /* 主題日介紹 */
+    .container1 {
+        width: 100%;
+    }
+    .item .pic5 img {
+        width: 100%;
+    }
+    .txt1 p {
+        font-size: 0.8em;
+        color: tomato;
+        padding: 5px;
+    }
+    .middle5 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .middle6 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .middle7 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .middle8 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .container1:hover img {
+        opacity: unset;
+    }
+
+    .container1:hover .middle5 {
+        opacity: unset;
+    }
+    .container1:hover .middle6 {
+        opacity: unset;
+    }
+    .container1:hover .middle7 {
+        opacity: unset;
+    }
+    .container1:hover .middle8 {
+        opacity: unset;
+    }
+    .txt1 h3 {
+        font-size: 18px;
+        padding-top: 7px;
+    }
+    footer {
+        width: 100%;
+    }
+}
+/* 手機版 */
+@media screen and (max-width: 767px) {
+    .hb {
         width: 40px;
         height: 40px;
         background-color: #000;
         position: relative;
+        right: -80px;
     }
-    .hb span{
+    .hb span {
         width: 32px;
         height: 2px;
-        background-color: #fff;
+        background-color: orange;
         position: absolute;
         right: 0;
         left: 0;
         margin: auto;
-        transition: top     .5s .2s, 
-                    bottom  .5s .2s, 
-                    opacity .5s, 
-                    transform .2s;
+        transition: top 0.5s 0.2s, bottom 0.5s 0.2s, opacity 0.5s,
+            transform 0.2s;
     }
-    .hb span:first-child{
+    .hb span:first-child {
         transform: rotate(0deg);
         top: 10px;
     }
-    .hb span:last-child{
+    .hb span:last-child {
         transform: rotate(0deg);
         bottom: 10px;
     }
-    .hb span:nth-child(2){
+    .hb span:nth-child(2) {
         top: 0;
         bottom: 0;
     }
 
-
-
-    #menu-control:checked ~ .main-header .hb span:first-child{
+    #menu-control:checked ~ .main-header .hb span:first-child {
         top: 19px;
         transform: rotate(225deg);
-        transition: top     .5s, 
-                    bottom  .5s, 
-                    opacity .5s, 
-                    transform .2s .5s;
+        transition: top 0.5s, bottom 0.5s, opacity 0.5s, transform 0.2s 0.5s;
     }
-    #menu-control:checked ~ .main-header .hb span:last-child{
+    #menu-control:checked ~ .main-header .hb span:last-child {
         bottom: 19px;
         transform: rotate(-225deg);
-        transition: top     .5s, 
-                    bottom  .5s, 
-                    opacity .5s, 
-                    transform .2s .5s;
+        transition: top 0.5s, bottom 0.5s, opacity 0.5s, transform 0.2s 0.5s;
     }
 
-    .hb span:nth-child(2){
+    .hb span:nth-child(2) {
         opacity: 1;
     }
-    #menu-control:checked ~ .main-header .hb span:nth-child(2){
+    #menu-control:checked ~ .main-header .hb span:nth-child(2) {
         opacity: 0;
     }
 
-
-
-
-    .main-nav{
+    .main-nav {
         position: absolute;
         background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
         top: 100%;
@@ -180,17 +303,17 @@
         height: calc(100vh - 50px);
         transition: left 1s;
     }
-    .main-nav a{
+    .main-nav a {
         display: block;
         padding: 5px 10px;
     }
-    .main-header .main-nav a{
-        color:black;
+    .main-header .main-nav a {
+        color: black;
     }
-    #menu-control:checked ~ .main-header .main-nav{
+    #menu-control:checked ~ .main-header .main-nav {
         left: 0;
     }
-    .main-header{
+    .main-header {
         display: flex;
         background-color: #888;
         align-items: center;
@@ -198,21 +321,169 @@
         padding: 4px 10px;
         position: relative;
     }
-    .main-nav img{
+    .main-nav img {
         display: block;
-        width:40px;
+        width: 40px;
         padding: 5px 10px;
-        margin-left:10px;
+        margin-left: 10px;
     }
-    #menu-control{
+    #menu-control {
         display: none;
     }
-    .main-header .logo img{
-        width:80px;
+    .main-header .logo img {
+        width: 80px;
         vertical-align: middle;
-        position:relative;
-      }
+        position: relative;
+        right: 82px;
+    }
+    .slogan-image {
+        width: 100%;
+    }
+    .slogan-txt h3 {
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .item {
+        width: 100%;
+    }
+    .container3 {
+        display: grid;
+        width: 100%;
+    }
+    .item .pic img {
+        width: 100%;
+        padding-left: 20px;
+    }
+    .txt p {
+        font-size: 1em;
+        color: tomato;
+    }
+    .middle {
+        opacity: 1;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .middle1 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .middle2 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .middle3 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .container3:hover img {
+        opacity: unset;
+    }
+
+    .container3:hover .middle {
+        opacity: unset;
+    }
+    .container3:hover .middle1 {
+        opacity: unset;
+    }
+    .container3:hover .middle2 {
+        opacity: unset;
+    }
+    .container3:hover .middle3 {
+        opacity: unset;
+    }
+    .txt h2 {
+        padding-top: 7px;
+    }
+    .container1 {
+        width: 100%;
+        display: grid;
+    }
+    .item .pic5 img {
+        width: 100%;
+    }
+    .txt1 p {
+        font-size: 0.8em;
+        color: tomato;
+        padding: 5px;
+    }
+    .middle5 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .middle6 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .middle7 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .middle8 {
+        opacity: 1;
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    .container1:hover img {
+        opacity: unset;
+    }
+
+    .container1:hover .middle5 {
+        opacity: unset;
+    }
+    .container1:hover .middle6 {
+        opacity: unset;
+    }
+    .container1:hover .middle7 {
+        opacity: unset;
+    }
+    .container1:hover .middle8 {
+        opacity: unset;
+    }
+    .txt1 h3 {
+        font-size: 18px;
+        padding-top: 7px;
+    }
+    footer {
+        width: 100%;
+    }
 }
-
-
-

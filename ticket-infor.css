@@ -5,163 +5,164 @@
     box-sizing: border-box;
 }
 
-
-body{
-  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+body {
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 /* 主選單 */
-.main-header{
-  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+.main-header {
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
-.main-header .container{
-  display: flex;
-  padding: 0px;
-  max-width: 1000px;
-  align-items: center;
-  gap:10px;
-  z-index: 20;
-  margin: auto;
+.main-header .container {
+    display: flex;
+    padding: 0px;
+    max-width: 1000px;
+    align-items: center;
+    gap: 10px;
+    z-index: 20;
+    margin: auto;
 }
-.main-header .logo{
-  width:150px;
-  max-width: 150px;
+.main-header .logo {
+    width: 150px;
+    max-width: 150px;
 }
-.main-header .logo img{
-  width:150px;
-  vertical-align: middle;
+.main-header .logo img {
+    width: 150px;
+    vertical-align: middle;
 }
-.main-header .main-nav a{
-  text-decoration: none;
-  color:white;
-  padding:5px;
+.main-header .main-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
 }
-nav a{
-  font-size:16px;
-  font-weight: 800;
-  margin:10px;
+nav a {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 10px;
 }
-nav a:hover{
-  border-bottom: 3px solid black;
+nav a:hover {
+    border-bottom: 3px solid black;
 }
-#menu-control{
-  display: none;
+#menu-control {
+    display: none;
 }
 /* 票價圖 */
 .pt {
-    margin:auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.pt .pic img{
+.pt .pic img {
     width: 800px;
     max-width: 800px;
 }
 /* 票價表格 */
-table{
+table {
     width: 700px;
     max-width: 700px;
-    margin-top:40px;
+    margin-top: 40px;
 }
-.center{
+.center {
     margin-left: auto;
     margin-right: auto;
 }
-th, td, tr {
+th,
+td,
+tr {
     text-align: center;
     padding: 16px;
     border: 2px solid black;
-  }
-td{
-    font-weight:700;
-  }
+}
+td {
+    font-weight: 700;
+}
 /* 問與答 */
-h1{
+h1 {
     text-align: center;
     font-size: 33px;
     padding-bottom: 0.25em;
     margin-top: 30px;
     margin-bottom: 20px;
-  }
+}
 
-  details{
+details {
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 0.25rem;
     border: 3px solid black;
-  }
-  summary{
+}
+summary {
     font-size: 1.25rem;
     font-weight: 800;
-    cursor: pointer; 
+    cursor: pointer;
     position: relative;
     outline: none;
-    color:black;
-  }
-  summary::after{
+    color: black;
+}
+summary::after {
     content: "🔻";
     padding: 0.5rem;
     position: absolute;
     right: 0.25rem;
     top: -0.5rem;
     color: whitesmoke;
-  }
-  details[open]{
-    background: whitesmoke;
-  }
-  details[open] summary{
-  color: black;
 }
-  details[open] summary::after{
+details[open] {
+    background: whitesmoke;
+}
+details[open] summary {
+    color: black;
+}
+details[open] summary::after {
     content: "🔺";
-  }
+}
 
-  details p{
+details p {
     color: dimgrey;
-    padding:15px;
-    font-size:22px;
-  }
-  .question{
+    padding: 15px;
+    font-size: 22px;
+}
+.question {
     display: flex;
     flex-direction: column;
     width: 850px;
     margin: auto;
-  }
-  /* 頁尾區  */
+}
+/* 頁尾區  */
 footer {
     text-align: center;
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     color: black;
     font-weight: 600;
     margin-top: 20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
-footer img{
-  margin-right:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.family::before{
-  content:"●";
-  color:blue;
+footer img {
+    margin-right: 10px;
 }
-.diamond::before{
-  content:"●";
-  color:purple;
+.family::before {
+    content: "●";
+    color: blue;
 }
-.couple::before{
-  content:"●";
-  color:pink;
+.diamond::before {
+    content: "●";
+    color: purple;
 }
-.baby::before{
-  content:"●";
-  color:orange;
+.couple::before {
+    content: "●";
+    color: pink;
 }
-.beef::before{
-  content:"●";
-  color:lightgreen;
+.baby::before {
+    content: "●";
+    color: orange;
 }
-.coffee::before{
-  content:"●";
-  color:brown;
+.beef::before {
+    content: "●";
+    color: lightgreen;
+}
+.coffee::before {
+    content: "●";
+    color: brown;
 }

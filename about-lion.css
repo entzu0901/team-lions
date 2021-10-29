@@ -2,7 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-name: addOpacity;
+  }
+  body{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
+  /* 時間軸動畫 */
+  #sec1 {
+    animation-delay: 1.5s;
+}
+
+  #sec2 {
+    animation-delay: 3s;
+}
+
+  #sec3 {
+    animation-delay: 4.5s;
+}
+
+  #sec4 {
+    animation-delay: 6s;
+}
+
+@keyframes addOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* 導覽列 */
 .main-header{
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
@@ -28,53 +68,54 @@
   color:white;
   padding:5px;
 }
-nav a{
+  nav a{
   font-size:16px;
   font-weight: 800;
   margin:10px;
 }
-nav a:hover{
+  nav a:hover{
   border-bottom: 3px solid black;
 }
-
-.wrapper{
+  #menu-control{
+  display: none;
+}
+/* 歷史與榮耀 */
+  .wrapper{
   display:flex;
   justify-content:center;
   align-items:center;
   flex-direction: column;
   margin-top:30px;
 }
-body{
-    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-}
-h2{
+  
+  h2{
     font-weight: 900;
 }
-.content p{
+  .content p{
     padding:5px;
     font-family: 'Noto Sans TC', sans-serif;
 }
-.txt p{
+  .txt p{
   padding:5px;
     font-family: 'Noto Sans TC', sans-serif;
 }
-.item1{
+  .item1{
     display:flex;
     justify-content: center;
     align-items:center;
     margin-bottom:70px;
 }
-.item1 .ball img{
+  .item1 .ball img{
     width:550px;
     max-width: 550px;
     vertical-align: middle;
 }
-.item1 .pic1 img{
+  .item1 .pic1 img{
    width:550px;
    max-width: 550px;
    vertical-align: middle;
 }
-.item1 .txt{
+  .item1 .txt{
     width:600px;
     max-width: 600px;
     padding:50px 30px;
@@ -83,17 +124,17 @@ h2{
     z-index: 1;
     flex-shrink: 0;
 }
-.item1 >:first-child{
+  .item1 >:first-child{
     margin-right: -100px; 
 }
-.item1:nth-child(1) .txt{
+  .item1:nth-child(1) .txt{
     background-color: rgb(182, 168, 160,.8)
 }
-.item1:nth-child(2) .txt{
+  .item1:nth-child(2) .txt{
     background-color: rgba(254, 201, 121, .8);
 }
- 
-.container5 {
+/* 時間軸 */
+  .container5 {
   position: relative;
   width: 90%;
   max-width: 1170px;
@@ -102,8 +143,8 @@ h2{
   margin-bottom: 3em;
 }
 
-/*Line*/
-.container5::before {
+
+  .container5::before {
   content: '';
   position: absolute;
   left: 580px;
@@ -112,20 +153,20 @@ h2{
   background-color: #000;
 }
 
-.section-container:first-child {
+  .section-container:first-child {
   padding-bottom: 110px;
 }
 
-.section-container {
+  .section-container {
   position: relative;
   clear: both;
   margin-bottom: 100px;
   padding-bottom: 70px;
 }
 
-/*Triangles*/
-.right::before,
-.left::before {
+
+  .right::before,
+  .left::before {
   content: '';
   position: absolute;
   top: 16px;
@@ -134,17 +175,17 @@ h2{
   border: 7px solid transparent;
 }
 
-.left::before {
+  .left::before {
   border-left: 7px solid #000;
   right: 628px;
 }
 
-.right::before {
+  .right::before {
   border-right: 7px solid #000;
   left: 628px;
 }
 
-.section {
+  .section {
   width: 40%;
   border-radius: 0.3em;
   padding: 0 30px;
@@ -152,19 +193,19 @@ h2{
   color: #fff;
 }
 
-.left {
+  .left {
   float: left;
 }
 
-.right {
+  .right {
   float: right;
 }
 
-p {
+  p {
   line-height: 1.5;
 }
-/*Circles*/
-.circle {
+
+  .circle {
   position: absolute;
   top: 0;
   left: 559px;
@@ -177,16 +218,10 @@ p {
   text-align: center;
   line-height: 2.6em;
 }
-.section-container img{
+  .section-container img{
   width:100%;
 }
-
-/*Animation*/
-
-
-
-
-
+  /* 頁尾區  */
   footer {
     text-align: center;
     padding: 3px;
@@ -195,6 +230,4 @@ p {
     font-weight: 600;
     margin-top: 40px;
   }
-  #menu-control{
-    display: none;
-}
+  

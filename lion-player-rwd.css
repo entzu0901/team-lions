@@ -1,21 +1,20 @@
-@media screen and (max-width:1025px) {
+@media screen and (max-width: 1025px) {
     .hb {
         display: block;
     }
 }
 
-
 /*平板 */
-@media screen and (min-width:768px)and (max-width:1024px){ 
-    .hb{
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* 導覽列 */
+    .hb {
         width: 40px;
         height: 40px;
         background-color: #000000;
         position: relative;
         right: -300px;
-        
     }
-    .hb span{
+    .hb span {
         width: 32px;
         height: 2px;
         background-color: orange;
@@ -23,54 +22,41 @@
         right: 0;
         left: 0;
         margin: auto;
-        transition: top     .5s .2s, 
-                    bottom  .5s .2s, 
-                    opacity .5s, 
-                    transform .2s;
+        transition: top 0.5s 0.2s, bottom 0.5s 0.2s, opacity 0.5s,
+            transform 0.2s;
     }
-    .hb span:first-child{
+    .hb span:first-child {
         transform: rotate(0deg);
         top: 10px;
     }
-    .hb span:last-child{
+    .hb span:last-child {
         transform: rotate(0deg);
         bottom: 10px;
     }
-    .hb span:nth-child(2){
+    .hb span:nth-child(2) {
         top: 0;
         bottom: 0;
     }
 
-
-
-    #menu-control:checked ~ .main-header .hb span:first-child{
+    #menu-control:checked ~ .main-header .hb span:first-child {
         top: 19px;
         transform: rotate(225deg);
-        transition: top     .5s, 
-                    bottom  .5s, 
-                    opacity .5s, 
-                    transform .2s .5s;
+        transition: top 0.5s, bottom 0.5s, opacity 0.5s, transform 0.2s 0.5s;
     }
-    #menu-control:checked ~ .main-header .hb span:last-child{
+    #menu-control:checked ~ .main-header .hb span:last-child {
         bottom: 19px;
         transform: rotate(-225deg);
-        transition: top     .5s, 
-                    bottom  .5s, 
-                    opacity .5s, 
-                    transform .2s .5s;
+        transition: top 0.5s, bottom 0.5s, opacity 0.5s, transform 0.2s 0.5s;
     }
 
-    .hb span:nth-child(2){
+    .hb span:nth-child(2) {
         opacity: 1;
     }
-    #menu-control:checked ~ .main-header .hb span:nth-child(2){
+    #menu-control:checked ~ .main-header .hb span:nth-child(2) {
         opacity: 0;
     }
 
-
-
-
-    .main-nav{
+    .main-nav {
         position: absolute;
         background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
         top: 100%;
@@ -79,24 +65,23 @@
         height: calc(100vh - 50px);
         transition: left 1s;
     }
-    .main-nav a{
+    .main-nav a {
         display: block;
         padding: 5px 10px;
-        
     }
-    .main-header .main-nav a{
-        color:black;
+    .main-header .main-nav a {
+        color: black;
     }
-    .main-nav img{
+    .main-nav img {
         display: block;
-        width:40px;
+        width: 40px;
         padding: 5px 10px;
-        margin-left:10px;
+        margin-left: 10px;
     }
-    #menu-control:checked ~ .main-header .main-nav{
+    #menu-control:checked ~ .main-header .main-nav {
         left: 0;
     }
-    .main-header{
+    .main-header {
         display: flex;
         background-color: #888;
         align-items: center;
@@ -104,177 +89,170 @@
         padding: 4px 10px;
         position: relative;
     }
-    #menu-control{
+    #menu-control {
         display: none;
     }
-    .main-header .logo img{
-        width:80px;
+    .main-header .logo img {
+        width: 80px;
         vertical-align: middle;
-        position:relative;
-        right:320px;
-      }
+        position: relative;
+        right: 320px;
+    }
+    /* 球員介紹 */
     .container1 {
         padding: 10px;
         gap: 5px;
         width: 100%;
-     }
-     .pagination{
-         width:100%;
-         position: relative;
-         right:20px;
-     }
-     footer{
-         width:100%;
-     }
-     .chen img{
-        z-index:-1;
-        -webkit-box-reflect:unset;
+    }
+    .pagination {
+        width: 100%;
+        position: relative;
+        right: 20px;
+    }
+    .chen img {
+        z-index: -1;
+        -webkit-box-reflect: unset;
         transform: unset;
-     }
-     .hu img {
-         z-index:-1;
-         -webkit-box-reflect:unset;
-         transform: unset;
-     }
-     .kuo img{
-         z-index:-1;
-         -webkit-box-reflect:unset;
-         transform: unset;
-     }
     }
-    @media screen and (max-width:767px){
-        .hb{
-            width: 40px;
-            height: 40px;
-            background-color: #000;
-            position: relative;
-            right: -120px;
-        }
-        .hb span{
-            width: 32px;
-            height: 2px;
-            background-color: orange;
-            position: absolute;
-            right: 0;
-            left: 0;
-            margin: auto;
-            transition: top     .5s .2s, 
-                        bottom  .5s .2s, 
-                        opacity .5s, 
-                        transform .2s;
-        }
-        .hb span:first-child{
-            transform: rotate(0deg);
-            top: 10px;
-        }
-        .hb span:last-child{
-            transform: rotate(0deg);
-            bottom: 10px;
-        }
-        .hb span:nth-child(2){
-            top: 0;
-            bottom: 0;
-        }
-    
-    
-    
-        #menu-control:checked ~ .main-header .hb span:first-child{
-            top: 19px;
-            transform: rotate(225deg);
-            transition: top     .5s, 
-                        bottom  .5s, 
-                        opacity .5s, 
-                        transform .2s .5s;
-        }
-        #menu-control:checked ~ .main-header .hb span:last-child{
-            bottom: 19px;
-            transform: rotate(-225deg);
-            transition: top     .5s, 
-                        bottom  .5s, 
-                        opacity .5s, 
-                        transform .2s .5s;
-        }
-    
-        .hb span:nth-child(2){
-            opacity: 1;
-        }
-        #menu-control:checked ~ .main-header .hb span:nth-child(2){
-            opacity: 0;
-        }
-    
-    
-    
-    
-        .main-nav{
-            position: absolute;
-            background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-            top: 100%;
-            left: -79%;
-            width: 50%;
-            height: calc(100vh - 50px);
-            transition: left 1s;
-            z-index:10;
-        }
-        .main-nav a{
-            display: block;
-            padding: 5px 10px;
-        }
-        .main-header .main-nav a{
-            color:black;
-        }
-        #menu-control:checked ~ .main-header .main-nav{
-            left: 0;
-        }
-        .main-header{
-            display: flex;
-            background-color: #888;
-            align-items: center;
-            justify-content: space-between;
-            padding: 4px 10px;
-            position: relative;
-        }
-        .main-nav img{
-            display: block;
-            width:40px;
-            padding: 5px 10px;
-            margin-left:10px;
-        }
-        #menu-control{
-            display: none;
-        }
-        .main-header .logo img{
-            width:80px;
-            vertical-align: middle;
-            position:relative;
-            right:120px;
-          }
-        .container1 {
-            padding: 5px;       
-            width: 100%;
-            display:grid;
-         }
-        .pagination{
-             width:100%;
-             position: relative;
-             right:60px;
-         }
-        footer{
-             width:100%;
-         }
-         .chen img{
-            z-index:-1;
-            -webkit-box-reflect:unset;
-            transform: unset;
-         }
-         .hu img {
-             z-index:-1;
-             -webkit-box-reflect:unset;
-             transform: unset;
-         }
-         .kuo img{
-             z-index:-1;
-             -webkit-box-reflect:unset;
-             transform: unset;
-         }
+    .hu img {
+        z-index: -1;
+        -webkit-box-reflect: unset;
+        transform: unset;
     }
-    
+    .kuo img {
+        z-index: -1;
+        -webkit-box-reflect: unset;
+        transform: unset;
+    }
+    /* 頁尾區 */
+    footer {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* 導覽列 */
+    .hb {
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        position: relative;
+        right: -120px;
+    }
+    .hb span {
+        width: 32px;
+        height: 2px;
+        background-color: orange;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transition: top 0.5s 0.2s, bottom 0.5s 0.2s, opacity 0.5s,
+            transform 0.2s;
+    }
+    .hb span:first-child {
+        transform: rotate(0deg);
+        top: 10px;
+    }
+    .hb span:last-child {
+        transform: rotate(0deg);
+        bottom: 10px;
+    }
+    .hb span:nth-child(2) {
+        top: 0;
+        bottom: 0;
+    }
+
+    #menu-control:checked ~ .main-header .hb span:first-child {
+        top: 19px;
+        transform: rotate(225deg);
+        transition: top 0.5s, bottom 0.5s, opacity 0.5s, transform 0.2s 0.5s;
+    }
+    #menu-control:checked ~ .main-header .hb span:last-child {
+        bottom: 19px;
+        transform: rotate(-225deg);
+        transition: top 0.5s, bottom 0.5s, opacity 0.5s, transform 0.2s 0.5s;
+    }
+
+    .hb span:nth-child(2) {
+        opacity: 1;
+    }
+    #menu-control:checked ~ .main-header .hb span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .main-nav {
+        position: absolute;
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+        top: 100%;
+        left: -79%;
+        width: 50%;
+        height: calc(100vh - 50px);
+        transition: left 1s;
+        z-index: 10;
+    }
+    .main-nav a {
+        display: block;
+        padding: 5px 10px;
+    }
+    .main-header .main-nav a {
+        color: black;
+    }
+    #menu-control:checked ~ .main-header .main-nav {
+        left: 0;
+    }
+    .main-header {
+        display: flex;
+        background-color: #888;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4px 10px;
+        position: relative;
+    }
+    .main-nav img {
+        display: block;
+        width: 40px;
+        padding: 5px 10px;
+        margin-left: 10px;
+    }
+    #menu-control {
+        display: none;
+    }
+    .main-header .logo img {
+        width: 80px;
+        vertical-align: middle;
+        position: relative;
+        right: 120px;
+    }
+    /* 球員介紹 */
+    .container1 {
+        padding: 5px;
+        width: 100%;
+        display: grid;
+    }
+    /* 換頁區 */
+    .pagination {
+        width: 100%;
+        position: relative;
+        right: 60px;
+    }
+    /* 球員介紹 */
+    .chen img {
+        z-index: -1;
+        -webkit-box-reflect: unset;
+        transform: unset;
+    }
+    .hu img {
+        z-index: -1;
+        -webkit-box-reflect: unset;
+        transform: unset;
+    }
+    .kuo img {
+        z-index: -1;
+        -webkit-box-reflect: unset;
+        transform: unset;
+    }
+    /* 頁尾區 */
+    footer {
+        width: 100%;
+    }
+}
