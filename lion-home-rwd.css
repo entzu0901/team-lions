@@ -354,6 +354,8 @@
     }
     .item .pic img {
         width: 100%;
+        display: block;
+        margin: auto;
     }
     .txt p {
         font-size: 1em;
