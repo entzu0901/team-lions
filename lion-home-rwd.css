@@ -1,5 +1,6 @@
 /*平板 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* 導覽列 */
     .hb {
         width: 40px;
         height: 40px;
@@ -245,6 +246,7 @@
 }
 /* 手機版 */
 @media screen and (max-width: 767px) {
+    /* 導覽列 */
     .hb {
         width: 40px;
         height: 40px;
@@ -336,6 +338,7 @@
         position: relative;
         right: 82px;
     }
+    /* 球隊標語 */
     .slogan-image {
         width: 100%;
     }
@@ -345,6 +348,7 @@
         margin-top: 30px;
         font-size: 40px;
     }
+    /* 球場設施 */
     .item {
         width: 100%;
     }
@@ -416,6 +420,7 @@
     .txt h2 {
         padding-top: 7px;
     }
+    /* 主題日 */
     .container1 {
         width: 100%;
         display: grid;
@@ -484,6 +489,7 @@
         font-size: 18px;
         padding-top: 7px;
     }
+    /* 頁尾區 */
     footer {
         width: 100%;
     }
