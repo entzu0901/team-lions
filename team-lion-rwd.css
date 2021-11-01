@@ -1,21 +1,20 @@
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     .hb {
         display: block;
     }
 }
 
-
 /*平板 */
-@media screen and (min-width:768px)and (max-width:1024px){ 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     /*主選單  */
-    .hb{
+    .hb {
         width: 40px;
         height: 40px;
         background-color: black;
         position: relative;
         left: 280px;
     }
-    .hb span{
+    .hb span {
         width: 32px;
         height: 2px;
         background-color: orange;
@@ -23,47 +22,39 @@
         right: 0;
         left: 0;
         margin: auto;
-        transition: top     .5s .2s, 
-                    bottom  .5s .2s, 
-                    opacity .5s, 
-                    transform .2s;
+        transition: top 0.5s 0.2s, bottom 0.5s 0.2s, opacity 0.5s,
+            transform 0.2s;
     }
-    .hb span:first-child{
+    .hb span:first-child {
         transform: rotate(0deg);
         top: 10px;
     }
-    .hb span:last-child{
+    .hb span:last-child {
         transform: rotate(0deg);
         bottom: 10px;
     }
-    .hb span:nth-child(2){
+    .hb span:nth-child(2) {
         top: 0;
         bottom: 0;
     }
-    #menu-control:checked ~ .main-header .hb span:first-child{
+    #menu-control:checked ~ .main-header .hb span:first-child {
         top: 19px;
         transform: rotate(225deg);
-        transition: top     .5s, 
-                    bottom  .5s, 
-                    opacity .5s, 
-                    transform .2s .5s;
+        transition: top 0.5s, bottom 0.5s, opacity 0.5s, transform 0.2s 0.5s;
     }
-    #menu-control:checked ~ .main-header .hb span:last-child{
+    #menu-control:checked ~ .main-header .hb span:last-child {
         bottom: 19px;
         transform: rotate(-225deg);
-        transition: top     .5s, 
-                    bottom  .5s, 
-                    opacity .5s, 
-                    transform .2s .5s;
+        transition: top 0.5s, bottom 0.5s, opacity 0.5s, transform 0.2s 0.5s;
     }
 
-    .hb span:nth-child(2){
+    .hb span:nth-child(2) {
         opacity: 1;
     }
-    #menu-control:checked ~ .main-header .hb span:nth-child(2){
+    #menu-control:checked ~ .main-header .hb span:nth-child(2) {
         opacity: 0;
-}
-    .main-nav{
+    }
+    .main-nav {
         position: absolute;
         background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
         top: 100%;
@@ -72,24 +63,23 @@
         height: calc(100vh - 50px);
         transition: left 1s;
     }
-    .main-nav a{
+    .main-nav a {
         display: block;
         padding: 5px 10px;
-        
     }
-    .main-header .main-nav a{
-        color:black;
+    .main-header .main-nav a {
+        color: black;
     }
-    .main-nav img{
+    .main-nav img {
         display: block;
-        width:40px;
+        width: 40px;
         padding: 5px 10px;
-        margin-left:10px;
+        margin-left: 10px;
     }
-    #menu-control:checked ~ .main-header .main-nav{
+    #menu-control:checked ~ .main-header .main-nav {
         left: 0;
     }
-    .main-header{
+    .main-header {
         display: flex;
         background-color: #888;
         align-items: center;
@@ -97,83 +87,82 @@
         padding: 4px 10px;
         position: relative;
     }
-    .logo img{
+    .logo img {
         vertical-align: middle;
     }
-    #menu-control{
+    #menu-control {
         display: none;
     }
-    .main-header .logo img{
-        width:100px;
+    .main-header .logo img {
+        width: 100px;
         vertical-align: middle;
-        position:relative;
+        position: relative;
         right: 280px;
-      }
-     /* 幻燈片 */
-    .next{
-        display:none;
     }
-    .prev{
-        display:none;
+    /* 幻燈片 */
+    .next {
+        display: none;
+    }
+    .prev {
+        display: none;
     }
     /* 最新賽事 */
-    .newspreview{
-        width:100%;
-        padding:20px;
-    }
-    .newgame{
-        width:100%;
-        padding:10px;
-    }
-    .newgame .pic img{
-        width:100%;
-    }
-    .weather{
-        display:none;
-    }
-    .bn50{
-        bottom:5%;
-    }
-/* 隔天先發 */
-    .pitcher{
-        width:100%;
-    }
-    .pitcher .pic img{
-        width:350px;
-        height: 260px;
-    }
-    .pitcher .pic1 img{
-        width:350px;
-        height: 260px;
-    }
-    .pitcher p{
+    .newspreview {
         width: 100%;
-      }
-    /* 頁尾區 */
-    footer{
-        width:100%;
+        padding: 20px;
     }
- 
-} 
+    .newgame {
+        width: 100%;
+        padding: 10px;
+    }
+    .newgame .pic img {
+        width: 100%;
+    }
+    .weather {
+        display: none;
+    }
+    .bn50 {
+        bottom: 5%;
+    }
+    /* 隔天先發 */
+    .pitcher {
+        width: 100%;
+    }
+    .pitcher .pic img {
+        width: 350px;
+        height: 260px;
+    }
+    .pitcher .pic1 img {
+        width: 350px;
+        height: 260px;
+    }
+    .pitcher p {
+        width: 100%;
+    }
+    /* 頁尾區 */
+    footer {
+        width: 100%;
+    }
+}
 
 /* 手機版 */
-@media screen and (max-width:767px){
+@media screen and (max-width: 767px) {
     /* 今日天氣 */
-    .weather{
-        display:none;
+    .weather {
+        display: none;
     }
     /* 最新賽事 */
-    .newspreview{
-        width:100%;
-        padding:20px;
+    .newspreview {
+        width: 100%;
+        padding: 20px;
     }
-    .newgame{
-        width:100%;
-        padding:10px;
+    .newgame {
+        width: 100%;
+        padding: 10px;
         margin-top: -50px;
     }
-    .newgame .pic img{
-        width:100%;
+    .newgame .pic img {
+        width: 100%;
     }
 
     /* 明日先發 */
@@ -181,29 +170,35 @@
         display: grid;
         margin-top: 25px;
     }
-    .pitcher .pic img{
-       width:100%;
+    .pitcher .pic img {
+        width: 100%;
+    }
+    .pitcher .pic1 img {
+        width: 100%;
     }
     /* 頁尾區 */
-    footer{
-        width:100%;
+    footer {
+        width: 100%;
     }
     /* 幻燈片 */
-    .prev{
-        display:none;
+    .prev {
+        display: none;
     }
-    .next{
-        display:none;
+    .next {
+        display: none;
+    }
+    .mySlides img {
+        width: 100%;
     }
     /* 主選單 */
-    .hb{
+    .hb {
         width: 40px;
         height: 40px;
         background-color: black;
         position: relative;
-        left:70px;
+        left: 70px;
     }
-    .hb span{
+    .hb span {
         width: 32px;
         height: 2px;
         background-color: orange;
@@ -211,47 +206,39 @@
         right: 0;
         left: 0;
         margin: auto;
-        transition: top     .5s .2s, 
-                    bottom  .5s .2s, 
-                    opacity .5s, 
-                    transform .2s;
+        transition: top 0.5s 0.2s, bottom 0.5s 0.2s, opacity 0.5s,
+            transform 0.2s;
     }
-    .hb span:first-child{
+    .hb span:first-child {
         transform: rotate(0deg);
         top: 10px;
     }
-    .hb span:last-child{
+    .hb span:last-child {
         transform: rotate(0deg);
         bottom: 10px;
     }
-    .hb span:nth-child(2){
+    .hb span:nth-child(2) {
         top: 0;
         bottom: 0;
     }
-    #menu-control:checked ~ .main-header .hb span:first-child{
+    #menu-control:checked ~ .main-header .hb span:first-child {
         top: 19px;
         transform: rotate(225deg);
-        transition: top     .5s, 
-                    bottom  .5s, 
-                    opacity .5s, 
-                    transform .2s .5s;
+        transition: top 0.5s, bottom 0.5s, opacity 0.5s, transform 0.2s 0.5s;
     }
-    #menu-control:checked ~ .main-header .hb span:last-child{
+    #menu-control:checked ~ .main-header .hb span:last-child {
         bottom: 19px;
         transform: rotate(-225deg);
-        transition: top     .5s, 
-                    bottom  .5s, 
-                    opacity .5s, 
-                    transform .2s .5s;
+        transition: top 0.5s, bottom 0.5s, opacity 0.5s, transform 0.2s 0.5s;
     }
 
-    .hb span:nth-child(2){
+    .hb span:nth-child(2) {
         opacity: 1;
     }
-    #menu-control:checked ~ .main-header .hb span:nth-child(2){
+    #menu-control:checked ~ .main-header .hb span:nth-child(2) {
         opacity: 0;
     }
-    .main-nav{
+    .main-nav {
         position: absolute;
         background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
         top: 100%;
@@ -260,17 +247,17 @@
         height: calc(100vh - 50px);
         transition: left 1s;
     }
-    .main-nav a{
+    .main-nav a {
         display: block;
         padding: 5px 10px;
     }
-    .main-header .main-nav a{
-        color:black;
+    .main-header .main-nav a {
+        color: black;
     }
-    #menu-control:checked ~ .main-header .main-nav{
+    #menu-control:checked ~ .main-header .main-nav {
         left: 0;
     }
-    .main-header{
+    .main-header {
         display: flex;
         background-color: #888;
         align-items: center;
@@ -278,22 +265,22 @@
         padding: 4px 10px;
         position: relative;
     }
-    .main-nav img{
+    .main-nav img {
         display: block;
-        width:40px;
+        width: 40px;
         padding: 5px 10px;
-        margin-left:10px;
+        margin-left: 10px;
     }
-    #menu-control{
+    #menu-control {
         display: none;
     }
-    .main-header .logo img{
-        width:100px;
-        right:90px;
-        position:relative;
+    .main-header .logo img {
+        width: 100px;
+        right: 90px;
+        position: relative;
         vertical-align: middle;
-      }
-    .bn50{
-        bottom:60px;
+    }
+    .bn50 {
+        bottom: 60px;
     }
 }
