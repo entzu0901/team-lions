@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <img src="./image005.jpg" class="image">
+<div class="forms">
+  <h3>Login Page</h3>
+
+  <label for="username">Account</label>
+  <input type="text" placeholder="Email" id="username" name="user">
+
+  <label for="password">Password</label>
+  <input type="password" placeholder="Password" id="password" name="secret">
+
+  <button onclick="login()">Log In</button>
+  <h4 style="text-align: center; margin-top: 10px; color: orange;">Not a member?</h4>
+  <a class="reg" href="#register">Register</a>
+  <div class="overlay" id="register">
+      <div class="wrapper">
+          <h2>請填入註冊資訊</h2>
+          <a href="#" class="close">&times;</a>
+          <div class="film">
+              <div class="container">
+                  <form>
+                      <label>Account</label>
+                      <input type="text" id="account1" placeholder="請填入帳號">
+                      <label>Personal_Name</label>
+                      <input type="text" id="name" placeholder="請填入使用者名稱">
+                      <label>Password</label>
+                      <input type="password" id="password1" placeholder="請輸入密碼">
+                      <label>confirm password</label>
+                      <a href="#" id="passwordeye" class="invisible bgImg"></a>
+                      <input type="password" id="confirmPassword" placeholder="再確認一次密碼">
+                      <button onclick="send()">Send</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
+
+<script src="/login.js"></script>
+
+</html>

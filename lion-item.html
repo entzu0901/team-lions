@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!-- 主選單 -->
+  <div class="entzu">
     <input type="checkbox" name="" id="menu-control">
     <header class="main-header">
         <div class="homepage">
@@ -29,7 +29,7 @@
                 <a href="ticket-infor.html">購票資訊</a>
                 <a href="lion-item.html">周邊商品</a>
                 <img src="person.svg">
-                <img src="cart2.svg">
+                <a href="shopcar.html"><img src="cart2.svg"></a>
             </nav>
         </div>
         <label for="menu-control" class="hb">
@@ -49,8 +49,8 @@
         </div>
     </div>
     <div style='text-align: center;'>
-        <span class="dot" onclick='currentSlide(1)'></span>
-        <span class="dot" onclick='currentSlide(2)'></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
     </div>
 
     <div class="txt1">
@@ -59,127 +59,164 @@
     <!-- 商品第一區 -->
     <div class="shop">
         <div class="pic">
-            <img src="100savet.jpeg">
-            <p>陳韻文百救援紀念T</p>
-            <span>NT:980</span>
-            <div class="button">
-                <button class="bn54">
-                    <span class="bn54span">BUY IT</span>
-                </button>
-                <button class="bn54">
-                    <span class="bn54span">PUT IN CAR</span>
-                </button>
-            </div>
+                <img src="100savet.jpeg">
+                <p>陳韻文百救援紀念T</p>
+                <span>NT:980</span>
+                <div class="button">
+                    <button class="bn54">
+                        <span class="bn54span">BUY IT</span>
+                    </button>
+                    <button class="bn54">
+                        <span id="A1001" class="addButton">
+                            <input type="hidden" value="陳韻文百救援紀念T|100savet.jpeg|980">
+                            <span class="bn54span">PUT IN CAR</span>
+                        </span>
+                    </button>
+                </div> 
         </div>
         <div class="hu">
-            <img src="hut.png" alt="">
-            <p>胡智為背號T</p>
-            <span>NT:950</span>
-            <div class="button">
-                <button class="bn54">
-                    <span class="bn54span">BUY IT</span>
-                </button>
-                <button class="bn54">
-                    <span class="bn54span">PUT IN CAR</span>
-                </button>
-            </div>
+           
+                <img src="hut.png" alt="">
+                <p>胡智為背號T</p>
+                <span>NT:950</span>
+                <div class="button">
+                    <button class="bn54">
+                        <span class="bn54span">BUY IT</span>
+                    </button>
+                    <button class="bn54">
+                        <span id="A1002" class="addButton">
+                            <input type="hidden" value="胡智為背號T|hut.png|950">
+                            <span class="bn54span">PUT IN CAR</span>
+                        </span>                      
+                    </button>
+                </div>
         </div>
         <div class="hero">
-            <img src="chen24cartoon.jpeg">
-            <p>超人氣力霸王球員背號T</p>
-            <span>NT:1280</span>
-            <div class="button">
-                <button class="bn54">
-                    <span class="bn54span">BUY IT</span>
-                </button>
-                <button class="bn54">
-                    <span class="bn54span">PUT IN CAR</span>
-                </button>
+            
+                <img src="chen24cartoon.jpeg">
+                <p>超人氣力霸王球員背號T</p>
+                <span>NT:1280</span>
+                <div class="button">
+                    <button class="bn54">
+                        <span class="bn54span">BUY IT</span>
+                    </button>
+                    <button class="bn54">
+                        <span id="A1003" class="addButton">
+                            <input type="hidden" value="超人氣力霸王球員背號T|chen24cartoon.jpeg|1280">
+                            <span class="bn54span">PUT IN CAR</span>
+                        </span>      
+                    </button>
+                </div>
             </div>
-        </div>
     </div>
     <!-- 商品第二區 -->
     <div class="shop">
         <div class="pic">
-            <img src="pan18t.png">
-            <p>球員背號T</p>
-            <span>NT:1080</span>
-            <div class="button">
-                <button class="bn54">
-                    <span class="bn54span">BUY IT</span>
-                </button>
-                <button class="bn54">
-                    <span class="bn54span">PUT IN CAR</span>
-                </button>
-            </div>
+            
+                <img src="pan18t.png">
+                <p>球員背號T</p>
+                <span>NT:1080</span>
+                <div class="button">
+                    <button class="bn54">
+                        <span class="bn54span">BUY IT</span>
+                    </button>
+                    <button class="bn54">
+                        <span id="A1004" class="addButton">
+                            <input type="hidden" value="球員背號T|pan18t.png|1080">
+                            <span class="bn54span">PUT IN CAR</span>
+                        </span>            
+                    </button>
+                </div>
         </div>
         <div class="hu">
-            <img src="cartoont.jpeg">
-            <p>超人力霸王聯名T</p>
-            <span>NT:950</span>
-            <div class="button">
-                <button class="bn54">
-                    <span class="bn54span">BUY IT</span>
-                </button>
-                <button class="bn54">
-                    <span class="bn54span">PUT IN CAR</span>
-                </button>
-            </div>
+          
+                <img src="cartoont.jpeg">
+                <p>超人力霸王聯名T</p>
+                <span>NT:950</span>
+                <div class="button">
+                    <button class="bn54">
+                        <span class="bn54span">BUY IT</span>
+                    </button>
+                    <button class="bn54">
+                        <span id="A1005" class="addButton">
+                            <input type="hidden" value="超人力霸王聯名T|cartoont.jpeg|950">
+                            <span class="bn54span">PUT IN CAR</span>
+                        </span>
+                    </button>
+                </div>
         </div>
         <div class="hero">
-            <img src="clothes holiday.jpeg" alt="">
-            <p>主場假日球衣</p>
-            <span>NT:1280</span>
-            <div class="button">
-                <button class="bn54">
-                    <span class="bn54span">BUY IT</span>
-                </button>
-                <button class="bn54">
-                    <span class="bn54span">PUT IN CAR</span>
-                </button>
-            </div>
+            
+                <img src="clothes holiday.jpeg" alt="">
+                <p>主場假日球衣</p>
+                <span>NT:1280</span>
+                <div class="button">
+                    <button class="bn54">
+                        <span class="bn54span">BUY IT</span>
+                    </button>
+                    <button class="bn54">
+                        <span id="A1006" class="addButton">
+                            <input type="hidden" value="主場假日球衣|clothes holiday.jpeg|1280">
+                            <span class="bn54span">PUT IN CAR</span>
+                        </span>  
+                    </button>
+                </div>
         </div>
     </div>
     <!-- 商品第三區 -->
     <div class="shop">
         <div class="pic">
-            <img src="free clothes.jpeg">
-            <p>休閒運動T</p>
-            <span>NT:980</span>
-            <div class="button">
-                <button class="bn54">
-                    <span class="bn54span">BUY IT</span>
-                </button>
-                <button class="bn54">
-                    <span class="bn54span">PUT IN CAR</span>
-                </button>
-            </div>
+           
+                <img src="free clothes.jpeg">
+                <p>休閒運動T</p>
+                <span>NT:980</span>
+                <div class="button">
+                    <button class="bn54">
+                        <span class="bn54span">BUY IT</span>
+                    </button>
+                    <button class="bn54">
+                        <span id="A1007" class="addButton">
+                            <input type="hidden" value="休閒運動T|free clothes.jpeg|980">
+                            <span class="bn54span">PUT IN CAR</span>
+                        </span> 
+                    </button>
+                </div>
         </div>
         <div class="hu">
-            <img src="clothes not inhome.jpeg" alt="">
-            <p>客場球衣</p>
-            <span>NT:950</span>
-            <div class="button">
-                <button class="bn54">
-                    <span class="bn54span">BUY IT</span>
-                </button>
-                <button class="bn54">
-                    <span class="bn54span">PUT IN CAR</span>
-                </button>
-            </div>
+       
+                <img src="clothes not inhome.jpeg" alt="">
+                <p>客場球衣</p>
+                <span>NT:950</span>
+                <div class="button">
+                    <button class="bn54">
+                        <span class="bn54span">BUY IT</span>
+                    </button>
+                    <button class="bn54">
+                        <span id="A1008" class="addButton">
+                            <input type="hidden" value="客場球衣|clothes not inhome.jpeg|950">
+                            <span class="bn54span">PUT IN CAR</span>
+                        </span>
+                          
+                    </button>
+                </div>
         </div>
         <div class="hero">
-            <img src="short clothes.jpeg" alt="">
-            <p>胡智為加盟紀念短T</p>
-            <span>NT:1280</span>
-            <div class="button">
-                <button class="bn54">
-                    <span class="bn54span">BUY IT</span>
-                </button>
-                <button class="bn54">
-                    <span class="bn54span">PUT IN CAR</span>
-                </button>
-            </div>
+          
+                <img src="short clothes.jpeg" alt="">
+                <p>胡智為加盟紀念短T</p>
+                <span>NT:1280</span>
+                <div class="button">
+                    <button class="bn54">
+                        <span class="bn54span">BUY IT</span>
+                    </button>
+                    <button class="bn54">
+                        <span id="A1009" class="addButton">
+                            <input type="hidden" value="胡智為加盟紀念短T|short clothes.jpeg|1280">
+                            <span class="bn54span">PUT IN CAR</span>
+                        </span>
+                            
+                    </button>
+                </div>
         </div>
     </div>
     <!-- 頁尾區 -->
@@ -194,7 +231,7 @@
             <img src="fb.svg">
         </div>
     </footer>
-
+</div>
     <script>
         var slideIndex = 1;
 
@@ -252,6 +289,7 @@
             clearInterval(myTimer);
             myTimer = setInterval(function () { plusSlides(slideIndex) }, 1000);
         }
+    
     </script>
 </body>
 
