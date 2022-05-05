@@ -13,6 +13,19 @@ body {
 .main-header {
     background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+}
+.header{
+    position: relative;
+    left: 650px;
+    bottom: 25px;
+}
+
 .main-header .homepage {
     display: flex;
     padding: 0px;

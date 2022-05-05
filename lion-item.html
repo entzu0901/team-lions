@@ -28,8 +28,12 @@
                 <a href="lion-home.html">球場導覽</a>
                 <a href="ticket-infor.html">購票資訊</a>
                 <a href="lion-item.html">周邊商品</a>
-                <img src="person.svg">
-                <a href="shopcar.html"><img src="cart2.svg"></a>
+                <a href="login.html"><img src="person.svg" width="15px" height="15px"></a>
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                <div class="header">
+                        <i class="fa fa-shopping-cart"></i>
+                        <asp:Label ID="lblCartCount" runat="server" CssClass="badge badge-warning"  ForeColor="White"/  style="display: none;"></a>
+                </div>
             </nav>
         </div>
         <label for="menu-control" class="hb">
@@ -69,7 +73,7 @@
                     <button class="bn54">
                         <span id="A1001" class="addButton">
                             <input type="hidden" value="陳韻文百救援紀念T|100savet.jpeg|980">
-                            <span class="bn54span">PUT IN CAR</span>
+                            <span id="shopcar"  style="font-size: 12px" onclick=cartsNumber()>PUT IN CAR</span>
                         </span>
                     </button>
                 </div> 
@@ -86,7 +90,7 @@
                     <button class="bn54">
                         <span id="A1002" class="addButton">
                             <input type="hidden" value="胡智為背號T|hut.png|950">
-                            <span class="bn54span">PUT IN CAR</span>
+                            <span id="shopcar"  style="font-size: 12px" onclick=cartsNumber()>PUT IN CAR</span>
                         </span>                      
                     </button>
                 </div>
@@ -103,7 +107,7 @@
                     <button class="bn54">
                         <span id="A1003" class="addButton">
                             <input type="hidden" value="超人氣力霸王球員背號T|chen24cartoon.jpeg|1280">
-                            <span class="bn54span">PUT IN CAR</span>
+                            <span id="shopcar"  style="font-size: 12px;" onclick=cartsNumber()>PUT IN CAR</span>
                         </span>      
                     </button>
                 </div>
@@ -123,7 +127,7 @@
                     <button class="bn54">
                         <span id="A1004" class="addButton">
                             <input type="hidden" value="球員背號T|pan18t.png|1080">
-                            <span class="bn54span">PUT IN CAR</span>
+                            <span  id="shopcar"  style="font-size: 12px;"  onclick="cartsNumber()">PUT IN CAR</span>
                         </span>            
                     </button>
                 </div>
@@ -140,7 +144,7 @@
                     <button class="bn54">
                         <span id="A1005" class="addButton">
                             <input type="hidden" value="超人力霸王聯名T|cartoont.jpeg|950">
-                            <span class="bn54span">PUT IN CAR</span>
+                            <span id="shopcar"  style="font-size: 12px;"  onclick="cartsNumber()">PUT IN CAR</span>
                         </span>
                     </button>
                 </div>
@@ -157,7 +161,7 @@
                     <button class="bn54">
                         <span id="A1006" class="addButton">
                             <input type="hidden" value="主場假日球衣|clothes holiday.jpeg|1280">
-                            <span class="bn54span">PUT IN CAR</span>
+                            <span  id="shopcar" style="font-size: 12px;"  onclick="cartsNumber()">PUT IN CAR</span>
                         </span>  
                     </button>
                 </div>
@@ -177,7 +181,7 @@
                     <button class="bn54">
                         <span id="A1007" class="addButton">
                             <input type="hidden" value="休閒運動T|free clothes.jpeg|980">
-                            <span class="bn54span">PUT IN CAR</span>
+                            <span  id="shopcar"  style="font-size: 12px;"  onclick="cartsNumber()">PUT IN CAR</span>
                         </span> 
                     </button>
                 </div>
@@ -194,7 +198,7 @@
                     <button class="bn54">
                         <span id="A1008" class="addButton">
                             <input type="hidden" value="客場球衣|clothes not inhome.jpeg|950">
-                            <span class="bn54span">PUT IN CAR</span>
+                            <span  id="shopcar"  style="font-size: 12px;" onclick="cartsNumber()">PUT IN CAR</span>
                         </span>
                           
                     </button>
@@ -212,9 +216,8 @@
                     <button class="bn54">
                         <span id="A1009" class="addButton">
                             <input type="hidden" value="胡智為加盟紀念短T|short clothes.jpeg|1280">
-                            <span class="bn54span">PUT IN CAR</span>
-                        </span>
-                            
+                            <span id="shopcar" style="font-size: 12px;"  onclick="cartsNumber()">PUT IN CAR</span>
+                        </span>      
                     </button>
                 </div>
         </div>
@@ -232,6 +235,7 @@
         </div>
     </footer>
 </div>
+<script src="shopcar.js"></script>
     <script>
         var slideIndex = 1;
 
