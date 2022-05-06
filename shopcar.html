@@ -4,36 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shopCar</title>
+    <title>購物車</title>
     <link rel="stylesheet" href="shopcar.css">
-    
 </head>
 <body>
-    <div class="entzu01" id="app">    
-        <section class="shoppage">
-            <div id="newItem">
-                <img src="short clothes.jpeg">
-                <span>胡智為加盟紀念短T</span>
-                <span>1280</span>
-                <div id="content">	
-					<nav>
-						Item : <span id="itemCount">0</span> item(s)
-					</nav>
-					<nav>
-						Subtotal : $ <span id="subtotal">0</span>
-					</nav>
-				</div>
-				<div id="shopButton">
-					<span class="cartProcess"><a href="4_cartEdit.html">Edit Cart</a></span>
-					<span class="cartProcess">Checkout</span>
-				</div>
-				<div style="clear:both;"></div>
+    <input type="checkbox" name="" id="menu-control">
+    <header class="main-header">
+        <div class="homepage">
+            <a href="team-lion.html" class="logo">
+                <img src="lion-logo.jpg" alt="lionlogo">
+            </a>
+            <nav class="main-nav">
+                <a href="about-lion.html">關於我們</a>
+                <a href="lion-news.html">球隊新聞</a>
+                <a href="lion-player.html">獅子軍點點名</a>
+                <a href="lion-home.html">球場導覽</a>
+                <a href="ticket-infor.html">購票資訊</a>
+                <a href="lion-item.html">周邊商品</a>
+                <a href="login.html"><img src="person.svg" width="15px" height="15px"></a>
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                <div class="headers">
+                        <i class="fa fa-shopping-cart"></i>
+                        <asp:Label ID="lblCartCount" runat="server" CssClass="badge badge-warning"  ForeColor="White"/  style="display: none;"></a>
+                </div>
+            </nav>
+            <label for="menu-control" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <br>
+    <div class="product-container">
+        <div class="product_header">
+            <div class="product-title">
+                Product
             </div>
-        </section>   
-      
-    </div>   
+            <div class="price">
+                Price
+            </div>
+            <div class="quatity">
+                Quatity
+            </div>
+            <div class="total">
+                Total
+            </div>
+        </div>
+        <div class="products">
+
+        </div>
+    </div>
 </body>
-<script>
-   
-</script>
+
+<script src="shopcar.js"></script>
+<script src="./all.min.js"></script>
 </html>

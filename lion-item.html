@@ -30,7 +30,7 @@
                 <a href="lion-item.html">周邊商品</a>
                 <a href="login.html"><img src="person.svg" width="15px" height="15px"></a>
                 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-                <div class="header">
+                <div class="header" onclick="changePage()">
                         <i class="fa fa-shopping-cart"></i>
                         <asp:Label ID="lblCartCount" runat="server" CssClass="badge badge-warning"  ForeColor="White"/  style="display: none;"></a>
                 </div>
@@ -63,7 +63,7 @@
     <!-- 商品第一區 -->
     <div class="shop">
         <div class="pic">
-                <img src="100savet.jpeg">
+                <img src="100savet.jpg">
                 <p>陳韻文百救援紀念T</p>
                 <span>NT:980</span>
                 <div class="button">
@@ -73,14 +73,14 @@
                     <button class="bn54">
                         <span id="A1001" class="addButton">
                             <input type="hidden" value="陳韻文百救援紀念T|100savet.jpeg|980">
-                            <span id="shopcar"  style="font-size: 12px" onclick=cartsNumber()>PUT IN CAR</span>
+                            <span id="shopcar"  style="font-size: 12px" >PUT IN CAR</span>
                         </span>
                     </button>
                 </div> 
         </div>
         <div class="hu">
            
-                <img src="hut.png" alt="">
+                <img src="hut.jpg" alt="">
                 <p>胡智為背號T</p>
                 <span>NT:950</span>
                 <div class="button">
@@ -90,14 +90,14 @@
                     <button class="bn54">
                         <span id="A1002" class="addButton">
                             <input type="hidden" value="胡智為背號T|hut.png|950">
-                            <span id="shopcar"  style="font-size: 12px" onclick=cartsNumber()>PUT IN CAR</span>
+                            <span id="shopcar"  style="font-size: 12px" >PUT IN CAR</span>
                         </span>                      
                     </button>
                 </div>
         </div>
         <div class="hero">
             
-                <img src="chen24cartoon.jpeg">
+                <img src="chen24cartoon.jpg">
                 <p>超人氣力霸王球員背號T</p>
                 <span>NT:1280</span>
                 <div class="button">
@@ -107,7 +107,7 @@
                     <button class="bn54">
                         <span id="A1003" class="addButton">
                             <input type="hidden" value="超人氣力霸王球員背號T|chen24cartoon.jpeg|1280">
-                            <span id="shopcar"  style="font-size: 12px;" onclick=cartsNumber()>PUT IN CAR</span>
+                            <span id="shopcar"  style="font-size: 12px;" >PUT IN CAR</span>
                         </span>      
                     </button>
                 </div>
@@ -116,8 +116,7 @@
     <!-- 商品第二區 -->
     <div class="shop">
         <div class="pic">
-            
-                <img src="pan18t.png">
+                <img src="pan18t.jpg">
                 <p>球員背號T</p>
                 <span>NT:1080</span>
                 <div class="button">
@@ -134,7 +133,7 @@
         </div>
         <div class="hu">
           
-                <img src="cartoont.jpeg">
+                <img src="cartoont.jpg">
                 <p>超人力霸王聯名T</p>
                 <span>NT:950</span>
                 <div class="button">
@@ -150,8 +149,7 @@
                 </div>
         </div>
         <div class="hero">
-            
-                <img src="clothes holiday.jpeg" alt="">
+                <img src="clothesholiday.jpg" alt="">
                 <p>主場假日球衣</p>
                 <span>NT:1280</span>
                 <div class="button">
@@ -170,8 +168,7 @@
     <!-- 商品第三區 -->
     <div class="shop">
         <div class="pic">
-           
-                <img src="free clothes.jpeg">
+                <img src="freeclothes.jpg">
                 <p>休閒運動T</p>
                 <span>NT:980</span>
                 <div class="button">
@@ -187,8 +184,7 @@
                 </div>
         </div>
         <div class="hu">
-       
-                <img src="clothes not inhome.jpeg" alt="">
+                <img src="clothesnotinhome.jpg" alt="">
                 <p>客場球衣</p>
                 <span>NT:950</span>
                 <div class="button">
@@ -205,8 +201,7 @@
                 </div>
         </div>
         <div class="hero">
-          
-                <img src="short clothes.jpeg" alt="">
+                <img src="shortclothes.jpg" alt="">
                 <p>胡智為加盟紀念短T</p>
                 <span>NT:1280</span>
                 <div class="button">
@@ -293,7 +288,9 @@
             clearInterval(myTimer);
             myTimer = setInterval(function () { plusSlides(slideIndex) }, 1000);
         }
-    
+    function changePage(){
+        location.href = "http://127.0.0.1:5500/shopcar.html";
+    };
     </script>
 </body>
 
