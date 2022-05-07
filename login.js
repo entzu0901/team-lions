@@ -13,22 +13,37 @@ function send(){ //註冊功能
         alert('確認密碼必須與設定的密碼相同');
         document.querySelector('#password1').value="";
         document.querySelector('#confirmPassword').value="";
+        return;
     }
     if (personalJson.length !== 0) {
         var nameIndex = personalJson[0].newName.indexOf(newName);
         var accountIndex = personalJson[0].newAccount.indexOf(newAccount);
         var secretIndex = personalJson[0].newPassword.indexOf(newPassword);
         console.log(nameIndex, accountIndex, secretIndex);
-        if (nameIndex == -1 && accountIndex == -1) {
-                alert('恭喜註冊成功!!');
-        } else {
+        if (nameIndex !== -1 || accountIndex !== -1) {
             alert("此帳密或使用者名稱之前有人申請過了!!");
             document.querySelector('#password1').value="";
             document.querySelector('#confirmPassword').value="";
             document.querySelector('#account1').value="";
             document.querySelector('#name').value="";
             return false;
+        }else{
+            alert("恭喜註冊成功!");
+            document.querySelector('#password1').value="";
+            document.querySelector('#confirmPassword').value="";
+            document.querySelector('#account1').value="";
+            document.querySelector('#name').value="";
+            history.go(-1);
         }
+
+    }else{
+        alert("恭喜註冊成功!");
+        document.querySelector('#password1').value="";
+        document.querySelector('#confirmPassword').value="";
+        document.querySelector('#account1').value="";
+        document.querySelector('#name').value="";
+        history.go(-1);
+    }
     account.push(newAccount);
     names.push(newName);
     password3.push(newPassword);
@@ -38,18 +53,19 @@ function send(){ //註冊功能
         "newPassword":password3
     };
     localStorage.setItem("_register",JSON.stringify(personalJson));
-   }
+ 
 }
 function login(){
    var user=document.querySelector('#username').value;
    var passwords=document.querySelector('#password').value;
-   for(let i=0; i<=personalJson.length+1;i++){
+   for(let i=0; i<=personalJson.length+1;i++){      
    if(user==personalJson[0].newAccount[i]&&passwords==personalJson[0].newPassword[i]){
         alert("登入成功");
         location.href="http://127.0.0.1:5500/team-lion.html";
         return;
-   }else{
-       alert("帳號或密碼錯誤或沒有此帳密請按下方註冊");
+   }
+   else{
+       alert("帳號或密碼錯誤");
        document.querySelector('#username').value="";
        document.querySelector('#password').value="";
        return;

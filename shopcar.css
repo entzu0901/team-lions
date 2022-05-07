@@ -9,7 +9,7 @@ body {
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
     place-items: center;
 }
-.headers{
+.header001{
     display: flex;
     justify-content: end;
     margin-right: -18px;
@@ -129,6 +129,7 @@ img.picture{
 }
 .svg-inline--fa.fa-xmark{
     width:5%;
+    cursor: pointer;
 }
 .name{
     font-size: 0.01em;
