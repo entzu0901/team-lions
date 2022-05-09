@@ -111,7 +111,6 @@ function totalCost(product){  //計算總價
     }else{
         localStorage.setItem("totalCost",product.price);
     }
-   
 }
 function displayCart(){  //繪製購物車內部的html
     let cartItem=localStorage.getItem("productsInCart");
@@ -122,9 +121,8 @@ function displayCart(){  //繪製購物車內部的html
         productContainer.innerHTML='';
         Object.values(cartItem).map(item=>{
             productContainer.innerHTML+=`
-            <div class="product">
-                    <i class="fa-solid fa-xmark">
-                    </i>
+            <div class="product" id="list">
+                    <button onclick="remove()">Delete</button>
                 <img class="picture" src="./${item.tag}.jpg">
                 <br>
                 <span class="name">
@@ -133,11 +131,17 @@ function displayCart(){  //繪製購物車內部的html
                 <div class="price1">
                     ${item.price}
                 </div>
-                <div class="quatity1">
-                    <i class="fa-solid fa-angle-left"></i>
-                    <span>${item.incart}</span>
-                    <i class="fa-solid fa-angle-right"></i>
-                </div>
+                <td class="cart-product-quantity" width="130px">
+                    <div class="input-group quantity">
+                        <div class="input-group-prepend" style="cursor: pointer" id=num onclick="decreaseValue()">
+                            <span class="input-group-text">-</span>
+                        </div>
+                        <input type="text" class="form-control" id=count  maxlength="2" max="10" value=${item.incart}>
+                        <div class="input-group-append" style="cursor: pointer" onclick="increaseValue()">
+                            <span class="input-group-text">+</span>
+                        </div>
+                    </div>
+                </td>
                 <div class="total1">
                     $${item.incart*item.price}
                 </div>
@@ -155,6 +159,100 @@ function displayCart(){  //繪製購物車內部的html
     }
    
 }
-
+function remove(){
+    var lists=document.querySelectorAll('#list');
+    var productName=document.querySelectorAll('.name');
+    var infor=localStorage.getItem('productsInCart');
+    var inforObj=JSON.parse(infor);
+    var buttons=document.getElementsByTagName('button');
+    // 點擊delete按鈕
+    for(b=0;b<=buttons.length-1;b++){
+        if(buttons[b].onclick.arguments!==null){   
+                if(Object.values(inforObj)[b].name===productName[b].innerText){    
+                            var count2=localStorage.getItem('cart');
+                            var counts1=parseInt(count2);
+                            var quatity=document.getElementsByClassName('form-control');
+                            var numberReal=parseInt(quatity[0].value);
+                            var price=document.getElementsByClassName('price1');
+                            var total=price[b].innerText*numberReal;
+                            var totalReal=localStorage.getItem('totalCost');
+                            localStorage.setItem('totalCost',totalReal-total);
+                            lists[b].remove();
+                            if(counts1>1){
+                                count2=counts1-numberReal;
+                                localStorage.setItem('cart',count2);
+                                Object.values(inforObj)[b].incart=Object.values(inforObj)[b].incart-Object.values(inforObj)[b].incart;
+                                JSON.stringify(Object.values(inforObj)[b]);
+                                if(Object.values(inforObj)[b].incart==0&&infor!==[]){
+                                    var newArray=Object.values(inforObj).filter(item=>item.incart!==0)
+                                    var newObj=Object.assign(newArray);
+                                    localStorage.setItem("productsInCart",JSON.stringify(newObj));
+                                    if(count2==0){
+                                        localStorage.removeItem('cart');
+                                        localStorage.removeItem('productsInCart');
+                                        localStorage.removeItem('totalCost');
+                                    }
+                                    history.go(0);  
+                                  }
+                                }
+                            }else if(counts==1){
+                                localStorage.removeItem('cart');
+                                localStorage.removeItem('productsInCart');
+                                localStorage.removeItem('totalCost');
+                                history.go(0);  
+                            }
+                        
+                }
+            
+        }
+}
+function decreaseValue(){
+    var buttons=document.querySelectorAll('.input-group-prepend');
+    var c=document.getElementsByClassName('input-group-prepend');
+    var realN=document.querySelectorAll('.form-control');
+    var infor=localStorage.getItem('productsInCart');
+    var inforObj=JSON.parse(infor);
+    for(b=0;b<=buttons.length-1;b++){
+        if(c[b].onclick.arguments!==null){ 
+        realN[b].classList.replace('form-control','form-control1');
+        var num1=document.getElementsByClassName('form-control1');
+        var real=parseInt(num1[0].value);
+        num1[0].value=(real==1)?1:real-1;
+        var realCount=localStorage.getItem('cart');
+        localStorage.setItem('cart',realCount-1);
+        Object.values(inforObj)[b].incart=Object.values(inforObj)[b].incart-1;
+        localStorage.setItem('productsInCart',JSON.stringify(inforObj));
+        history.go();
+    }
+    for(c=0;c<=buttons.length-1;c++){
+        var totals=document.getElementsByClassName('total1');
+        var aTotals=totals[c].innerText;
+        var realTotal=localStorage.getItem('totalCost');
+        realTotal=aTotals+aTotals;
+        console.log(realTotal);
+    }
+  }   
+}
+function increaseValue(){
+    var buttons=document.querySelectorAll('.input-group-append');
+    var c=document.getElementsByClassName('input-group-append');
+    var realN=document.querySelectorAll('.form-control');
+    var infor=localStorage.getItem('productsInCart');
+    var inforObj=JSON.parse(infor);
+    for(b=0;b<=buttons.length-1;b++){
+        if(c[b].onclick.arguments!==null){ 
+        realN[b].classList.replace('form-control','form-control1');
+        var num1=document.getElementsByClassName('form-control1');
+        var real=parseInt(num1[0].value);
+        num1[0].value=(real>10)?real:real+1;
+        var realCount=localStorage.getItem('cart');
+        realCount=parseInt(realCount);
+        localStorage.setItem('cart',realCount+1);
+        Object.values(inforObj)[b].incart=Object.values(inforObj)[b].incart+1;
+        localStorage.setItem('productsInCart',JSON.stringify(inforObj));
+        history.go();
+    }
+  }   
+}
 onloadCart();
 displayCart();
