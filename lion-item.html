@@ -64,7 +64,8 @@
     <div class="shop">
         <div class="pic">
                 <img src="100savet.jpg">
-                <p>陳韻文百救援紀念T</p>
+                <img class="heart" src="whiteheart.png" onclick="changePicture()">
+                <p>陳韻文百救援紀念T</p>  
                 <span>NT:980</span>
                 <div class="button">
                     <button class="bn54">
@@ -79,8 +80,8 @@
                 </div> 
         </div>
         <div class="hu">
-           
                 <img src="hut.jpg" alt="">
+                <img class="heart" src="whiteheart.png" onclick="changePicture()">
                 <p>胡智為背號T</p>
                 <span>NT:950</span>
                 <div class="button">
@@ -96,8 +97,8 @@
                 </div>
         </div>
         <div class="hero">
-            
                 <img src="chen24cartoon.jpg">
+                <img class="hearts" src="whiteheart.png" onclick="changePicture1()">
                 <p>超人氣力霸王球員背號T</p>
                 <span>NT:1280</span>
                 <div class="button">
@@ -117,6 +118,7 @@
     <div class="shop">
         <div class="pic">
                 <img src="pan18t.jpg">
+                <img class="heart" src="whiteheart.png" onclick="changePicture()">
                 <p>球員背號T</p>
                 <span>NT:1080</span>
                 <div class="button">
@@ -132,8 +134,8 @@
                 </div>
         </div>
         <div class="hu">
-          
                 <img src="cartoont.jpg">
+                <img class="heart" src="whiteheart.png" onclick="changePicture()">
                 <p>超人力霸王聯名T</p>
                 <span>NT:950</span>
                 <div class="button">
@@ -150,6 +152,7 @@
         </div>
         <div class="hero">
                 <img src="clothesholiday.jpg" alt="">
+                <img class="hearts" src="whiteheart.png" onclick="changePicture1()">
                 <p>主場假日球衣</p>
                 <span>NT:1280</span>
                 <div class="button">
@@ -169,6 +172,7 @@
     <div class="shop">
         <div class="pic">
                 <img src="freeclothes.jpg">
+                <img class="heart" src="whiteheart.png" onclick="changePicture()">
                 <p>休閒運動T</p>
                 <span>NT:980</span>
                 <div class="button">
@@ -185,6 +189,7 @@
         </div>
         <div class="hu">
                 <img src="clothesnotinhome.jpg" alt="">
+                <img class="heart" src="whiteheart.png" onclick="changePicture()">
                 <p>客場球衣</p>
                 <span>NT:950</span>
                 <div class="button">
@@ -202,6 +207,7 @@
         </div>
         <div class="hero">
                 <img src="shortclothes.jpg" alt="">
+                <img class="hearts" src="whiteheart.png" onclick="changePicture1()">
                 <p>胡智為加盟紀念短T</p>
                 <span>NT:1280</span>
                 <div class="button">
@@ -232,6 +238,28 @@
 </div>
 <script src="shopcar.js"></script>
     <script>
+        function changePicture(){
+            var heart=document.getElementsByClassName('heart');
+            for(let i=0;i<=heart.length-1;i++){
+                if(heart[i].onclick.arguments!==null&&heart[i].src==="http://127.0.0.1:5500/whiteheart.png"){
+                    heart[i].src='http://127.0.0.1:5500/whiteheart.svg'
+                }
+                else if(heart[i].src==="http://127.0.0.1:5500/whiteheart.svg"){
+                    heart[i].src='http://127.0.0.1:5500/whiteheart.png'
+                }
+            }
+        }
+        function changePicture1(){
+            var heart=document.getElementsByClassName('hearts');
+            for(let i=0;i<=heart.length-1;i++){
+                if(heart[i].onclick.arguments!==null&&heart[i].src==="http://127.0.0.1:5500/whiteheart.png"){
+                    heart[i].src='http://127.0.0.1:5500/whiteheart.svg'
+                }
+                else if(heart[i].src==="http://127.0.0.1:5500/whiteheart.svg"){
+                    heart[i].src='http://127.0.0.1:5500/whiteheart.png'
+                }
+            }
+        }
         var slideIndex = 1;
 
         var myTimer;
@@ -288,9 +316,9 @@
             clearInterval(myTimer);
             myTimer = setInterval(function () { plusSlides(slideIndex) }, 1000);
         }
-    function changePage(){
-        location.href = "http://127.0.0.1:5500/shopcar.html";
-    };
+        function changePage(){
+            location.href = "http://127.0.0.1:5500/shopcar.html";
+        };
     </script>
 </body>
 

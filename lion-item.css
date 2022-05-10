@@ -65,16 +65,23 @@ nav a:hover {
     margin-top: 45px;
     gap: 50px;
 }
-
+img.heart{
+    position: absolute;
+    width:2%;
+}
+.hero img.hearts{
+    width:2%;
+    position: absolute;
+}
 .shop > div {
     max-width: 400px;
 }
 
 .shop img {
-    max-width: 100%;
+    max-width: 80%;
 }
 .hero img {
-    width: 100%;
+    width: 80%;
 }
 .shop p {
     font-size: 18px;

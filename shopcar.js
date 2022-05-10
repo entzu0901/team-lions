@@ -233,11 +233,11 @@ function decreaseValue(){
     localStorage.getItem("totalCost");
     let array=Object.values(inforObj);
     for(let b=0;b<=buttons.length-1;b++){
-        if(c[b].onclick.arguments!==null){ 
-        realN[b].classList.replace('form-control','form-control1');
-        var num1=document.getElementsByClassName('form-control1');
+        var num1=document.getElementsByClassName('form-control');
         var real=parseInt(num1[0].value);
-        num1[0].value=(real==1)?1:real-1;
+        if(c[b].onclick.arguments!==null&&Number(num1[b].value)!==1){ 
+        realN[b].classList.replace('form-control','form-control1');
+        num1[b].value=(real<=1)? real:real-1;
         var realCount=localStorage.getItem('cart');
         localStorage.setItem('cart',realCount-1);
         Object.values(inforObj)[b].incart=Object.values(inforObj)[b].incart-1;
@@ -246,7 +246,6 @@ function decreaseValue(){
         for(let j=0;j<=buttons.length-1;j++){
             let num=array[j].total;
             z.push(num);
-            console.log(z);
         }
         var arrayTotal=z.reduce((acc,cur)=>acc+cur,0);
         localStorage.setItem('totalCost',arrayTotal);
