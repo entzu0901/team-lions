@@ -1,59 +1,70 @@
 let carts=document.querySelectorAll('#shopcar');
 let redpoint=document.querySelector('#lblCartCount');
+let z=[];
+let zee=[];
 let products=[
     {
         name:"陳韻文百救援紀念T",
         tag:"100savet",
         price:980,
-        incart:0
+        incart:0,
+        total:0,
     },
     {
         name:"胡智為背號T",
         tag:"hut",
         price:950,
         incart:0,
+        total:0,
     },
     {
         name:"超人氣力霸王球員背號T",
         tag:"chen24cartoon",
         price:1280,
-        incart:0
+        incart:0,
+        total:0,
     },
     {
         name:"球員背號T",
         tag:"pan18t",
         price:1080,
-        incart:0
+        incart:0,
+        total:0,
     },
     {
         name:"超人力霸王聯名T",
         tag:"cartoont",
         price:950,
-        incart:0
+        incart:0,
+        total:0,
     },
     {
         name:"主場假日球衣",
         tag:"clothesholiday",
         price:1280,
-        incart:0
+        incart:0,
+        total:0,
     },
     {
         name:"休閒運動T",
         tag:"freeclothes",
         price:980,
-        incart:0
+        incart:0,
+        total:0,
     },
     {
         name:"客場球衣",
         tag:"clothesnotinhome",
         price:950,
-        incart:0
+        incart:0,
+        total:0,
     },
     {
         name:"胡智為加盟紀念短T",
         tag:"shortclothes",
         price:1280,
-        incart:0
+        incart:0,
+        total:0,
     }
 ]
 for(let i=0;i<=carts.length-1;i++){
@@ -80,11 +91,13 @@ function setItem(product){  //放置localStorage總共幾項商品
             }
         }
         cartItem[product.tag].incart+=1;
+        cartItem[product.tag].total=cartItem[product.tag].price*cartItem[product.tag].incart;
     }else{
         product.incart= 1;
         cartItem={
             [product.tag]:product
         }
+        cartItem[product.tag].total=cartItem[product.tag].price*cartItem[product.tag].incart;
     }
     localStorage.setItem('productsInCart',JSON.stringify(cartItem));
     history.go();
@@ -103,20 +116,25 @@ function cartsNumber(product){ //計算購買了幾項商品
     }
    setItem(product);
 }
-function totalCost(product){  //計算總價
-    let cartCost=localStorage.getItem("totalCost");
-    if(cartCost!==null){
-        cartCost=parseInt(cartCost);
-        localStorage.setItem("totalCost",cartCost+product.price);
-    }else{
-        localStorage.setItem("totalCost",product.price);
+function totalCost(){  //計算總價
+    localStorage.getItem("totalCost");
+    let infor=localStorage.getItem("productsInCart");
+    infor=JSON.parse(infor);
+    let array=Object.values(infor);
+    for(let j=0;j<=array.length-1;j++){
+        let num=array[j].total;
+        z.push(num);
+        console.log(z);
+        var arrayTotal=z.reduce((acc,cur)=>acc+cur,0);
     }
+    localStorage.setItem('totalCost',arrayTotal);
 }
+
 function displayCart(){  //繪製購物車內部的html
     let cartItem=localStorage.getItem("productsInCart");
     cartItem=JSON.parse(cartItem);
     let productContainer=document.querySelector('.products');
-    let cartCost=localStorage.getItem("totalCost");
+    var cartCost=localStorage.getItem("totalCost");
     if(cartItem&&productContainer){
         productContainer.innerHTML='';
         Object.values(cartItem).map(item=>{
@@ -172,7 +190,7 @@ function remove(){
                             var count2=localStorage.getItem('cart');
                             var counts1=parseInt(count2);
                             var quatity=document.getElementsByClassName('form-control');
-                            var numberReal=parseInt(quatity[0].value);
+                            var numberReal=parseInt(quatity[b].value);
                             var price=document.getElementsByClassName('price1');
                             var total=price[b].innerText*numberReal;
                             var totalReal=localStorage.getItem('totalCost');
@@ -187,7 +205,7 @@ function remove(){
                                     var newArray=Object.values(inforObj).filter(item=>item.incart!==0)
                                     var newObj=Object.assign(newArray);
                                     localStorage.setItem("productsInCart",JSON.stringify(newObj));
-                                    if(count2==0){
+                                    if(count2==0||totalReal==0){
                                         localStorage.removeItem('cart');
                                         localStorage.removeItem('productsInCart');
                                         localStorage.removeItem('totalCost');
@@ -212,7 +230,9 @@ function decreaseValue(){
     var realN=document.querySelectorAll('.form-control');
     var infor=localStorage.getItem('productsInCart');
     var inforObj=JSON.parse(infor);
-    for(b=0;b<=buttons.length-1;b++){
+    localStorage.getItem("totalCost");
+    let array=Object.values(inforObj);
+    for(let b=0;b<=buttons.length-1;b++){
         if(c[b].onclick.arguments!==null){ 
         realN[b].classList.replace('form-control','form-control1');
         var num1=document.getElementsByClassName('form-control1');
@@ -221,17 +241,18 @@ function decreaseValue(){
         var realCount=localStorage.getItem('cart');
         localStorage.setItem('cart',realCount-1);
         Object.values(inforObj)[b].incart=Object.values(inforObj)[b].incart-1;
+        Object.values(inforObj)[b].total=Object.values(inforObj)[b].total-Object.values(inforObj)[b].price;
         localStorage.setItem('productsInCart',JSON.stringify(inforObj));
-        history.go();
+        for(let j=0;j<=buttons.length-1;j++){
+            let num=array[j].total;
+            z.push(num);
+            console.log(z);
+        }
+        var arrayTotal=z.reduce((acc,cur)=>acc+cur,0);
+        localStorage.setItem('totalCost',arrayTotal);
+        location.reload();
     }
-    for(c=0;c<=buttons.length-1;c++){
-        var totals=document.getElementsByClassName('total1');
-        var aTotals=totals[c].innerText;
-        var realTotal=localStorage.getItem('totalCost');
-        realTotal=aTotals+aTotals;
-        console.log(realTotal);
-    }
-  }   
+ }    
 }
 function increaseValue(){
     var buttons=document.querySelectorAll('.input-group-append');
@@ -239,6 +260,8 @@ function increaseValue(){
     var realN=document.querySelectorAll('.form-control');
     var infor=localStorage.getItem('productsInCart');
     var inforObj=JSON.parse(infor);
+    localStorage.getItem("totalCost");
+    let array=Object.values(inforObj);
     for(b=0;b<=buttons.length-1;b++){
         if(c[b].onclick.arguments!==null){ 
         realN[b].classList.replace('form-control','form-control1');
@@ -249,8 +272,15 @@ function increaseValue(){
         realCount=parseInt(realCount);
         localStorage.setItem('cart',realCount+1);
         Object.values(inforObj)[b].incart=Object.values(inforObj)[b].incart+1;
+        Object.values(inforObj)[b].total=Object.values(inforObj)[b].total+Object.values(inforObj)[b].price;
         localStorage.setItem('productsInCart',JSON.stringify(inforObj));
-        history.go();
+        for(let j=0;j<=buttons.length-1;j++){
+            let num=array[j].total;
+            zee.push(num);
+        }
+        var arrayTotal=zee.reduce((acc,cur)=>acc+cur,0);
+        localStorage.setItem('totalCost',arrayTotal);
+        location.reload();
     }
   }   
 }
