@@ -84,3 +84,68 @@ nav a:hover {
 	display: flex;
 	align-items: center;
 }
+.smallimg{
+    width:15%;
+    margin:3px;
+}
+.product-container{
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+.product-detail h5{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0px;
+}
+.product-detail{
+    margin-left: 60px;
+    width:200%;
+}
+button{
+    border-radius: 0%;
+    background-color: #fcb69f;
+    width:50%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.btn.add-up.qk-bd--product_border{
+    border-radius: 0%;
+    width: 30%;
+    cursor: pointer;
+}
+.btn.add-down.qk-bd--product_border{
+    border-radius: 0%;
+    width: 30%;
+    cursor: pointer;
+}
+.btn-group{
+    display: flex;
+    margin-top: 10px;
+}
+.btn.item-quantity{
+    width:70%;
+    text-align: center;
+}
+.button-place{
+    display: flex;
+}
+.page{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 10px;
+    width: 80%;
+    margin-top: 20px;
+}
+.page-detail img{
+    display: flex;
+    margin: auto;
+    padding: 40px;
+}
+.price1{
+    padding: 40px;
+    font-weight: bold;
+}

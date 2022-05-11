@@ -9,7 +9,6 @@ let products=[
         price:980,
         incart:0,
         total:0,
-        heart:false
     },
     {
         name:"胡智為背號T",
@@ -17,7 +16,6 @@ let products=[
         price:950,
         incart:0,
         total:0,
-        heart:false
     },
     {
         name:"超人氣力霸王球員背號T",
@@ -25,7 +23,6 @@ let products=[
         price:1280,
         incart:0,
         total:0,
-        heart:false
     },
     {
         name:"球員背號T",
@@ -33,7 +30,6 @@ let products=[
         price:1080,
         incart:0,
         total:0,
-        heart:false
     },
     {
         name:"超人力霸王聯名T",
@@ -41,7 +37,6 @@ let products=[
         price:950,
         incart:0,
         total:0,
-        heart:false
     },
     {
         name:"主場假日球衣",
@@ -49,7 +44,6 @@ let products=[
         price:1280,
         incart:0,
         total:0,
-        heart:false
     },
     {
         name:"休閒運動T",
@@ -57,7 +51,6 @@ let products=[
         price:980,
         incart:0,
         total:0,
-        heart:false
     },
     {
         name:"客場球衣",
@@ -65,7 +58,6 @@ let products=[
         price:950,
         incart:0,
         total:0,
-        heart:false
     },
     {
         name:"胡智為加盟紀念短T",
@@ -73,7 +65,6 @@ let products=[
         price:1280,
         incart:0,
         total:0,
-        heart:false
     }
 ]
 for(let i=0;i<=carts.length-1;i++){
@@ -92,14 +83,8 @@ function onloadCart(){  //購物車顯示紅字
 function setItem(product){  //放置localStorage總共幾項商品
     let cartItem=localStorage.getItem('productsInCart');
     cartItem=JSON.parse(cartItem);
-    let heart1=document.querySelectorAll('.heart');
-    let heart2=document.querySelectorAll('.hearts');
-    for(let i=0;i<=heart1.length-1;i++){
-        if(heart1[i].src=="http://127.0.0.1:5500/whiteheart.svg"){
-            if(heart2[i].src=="http://127.0.0.1:5500/whiteheart.svg")
-            cartItem[product.tag].heart=true;
-        }
-    }
+    var heart1=document.querySelectorAll('.heart');
+    var heart2=document.querySelectorAll('.hearts');
         if(cartItem!=null){      
             if(cartItem[product.tag]==undefined){
                 cartItem={

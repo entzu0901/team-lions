@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductList</title>
+    <link rel="stylesheet" href="lovePage.css">
+    <script src="./all.min.js"></script>
+    <script src="./productList.js"></script>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-control">
+    <header class="main-header">
+        <div class="homepage">
+            <a href="team-lion.html" class="logo">
+                <img src="lion-logo.jpg" alt="lionlogo">
+            </a>
+            <nav class="main-nav">
+                <a href="about-lion.html">關於我們</a>
+                <a href="lion-news.html">球隊新聞</a>
+                <a href="lion-player.html">獅子軍點點名</a>
+                <a href="lion-home.html">球場導覽</a>
+                <a href="ticket-infor.html">購票資訊</a>
+                <a href="lion-item.html">周邊商品</a>
+                <a href="login.html"><img src="person.svg" width="15px" height="15px"></a>
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                <div class="header001">
+                        <i class="fa fa-shopping-cart"></i>
+                        <asp:Label ID="lblCartCount" runat="server" CssClass="badge badge-warning"  ForeColor="White"/  style="display: none;"></a>
+                </div>
+            </nav>
+            <label for="menu-control" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <br>
+    <div class="product-container">
+        <div class="productList">
+            <img src="./clothesnotinhome.jpg" style="width:100%" id="mainImg">
+            <div class="smallpic">
+                <img src="./clothesnotinhome.jpg" class="smallimg" style="cursor:pointer" onclick="change()">
+                <img src="./bb1.jpeg" class="smallimg" style="cursor:pointer" onclick="change()">
+                <img src="./bb2.jpeg" class="smallimg" style="cursor:pointer" onclick="change()">
+                <img src="./bb3.jpeg" class="smallimg" style="cursor:pointer" onclick="change()">
+                <img src="./bb4.jpeg" class="smallimg" style="cursor:pointer" onclick="change()">
+            </div>
+        </div>
+        <div class="product-detail">
+            <h2>LION  客場球衣</h2>
+            <h5>球衣胸前英文字體設計除融入了象徵勝利的V型(Victory)視覺動線，也將象徵雄獅的「尖牙」、「利爪」融入設計。</h5>
+            <span class="price1">售價NT$980</span>
+            <span class="product_quatity">
+                <div class="btn-group" role="group" aria-label="First group">
+                    <button class="btn add-down qk-bd--product_border" type="button" onclick="decreaseValue()">-</button>
+                    <input class="btn item-quantity" type="text" name="quantity" value="1" data-old-value="1">
+                    <button class="btn add-up qk-bd--product_border" type="button" onclick="increaseValue()">+</button>
+                </div>
+            </span>
+            <span>尺寸</span>
+                <label class="option qk-btn qk-btn--md qk-bd--button qk-text--button qk-text--center qk-pd_x--1 selected"><span class="text">XS</span></label>
+                <label class="option qk-btn qk-btn--md qk-bd--button qk-text--button qk-text--center qk-pd_x--1 selected"><span class="text">S</span></label>
+                <label class="option qk-btn qk-btn--md qk-bd--button qk-text--button qk-text--center qk-pd_x--1 selected"><span class="text">M</span></label>
+                <label class="option qk-btn qk-btn--md qk-bd--button qk-text--button qk-text--center qk-pd_x--1 selected"><span class="text">L</span></label>
+                <label class="option qk-btn qk-btn--md qk-bd--button qk-text--button qk-text--center qk-pd_x--1 selected"><span class="text">XL</span></label>
+            <br>
+            <div class="button-place">
+                <button>購買</button>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <li style="cursor:pointer;" onclick="changePic()" class="detail3">規格說明</li>
+        <li style="cursor:pointer;" onclick="changePic()" class="detail2">運送方式</li>
+    </div>
+    <div class="page-detail">
+        <img src="./detail1.jpeg" class="detail">
+    </div>
+</body>
+</html>
