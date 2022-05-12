@@ -61,7 +61,7 @@ function login(){
    for(let i=0; i<=personalJson.length+1;i++){      
    if(user==personalJson[0].newAccount[i]&&passwords==personalJson[0].newPassword[i]){
         alert("登入成功");
-        location.href="http://127.0.0.1:5500/team-lion.html";
+        location.href="https://entzu0901.github.io/team-lions/lion-item.html";
         return;
    }
    else{

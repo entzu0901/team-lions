@@ -76,7 +76,7 @@ for(let i=0;i<=carts.length-1;i++){
             }
             else{
                 alert("請先註冊或登入");
-                location.href="http://127.0.0.1:5500/login.html"
+                location.href="https://entzu0901.github.io/team-lions/login.html"
             }
         })
 }
