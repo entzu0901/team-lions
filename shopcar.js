@@ -1,5 +1,6 @@
 let carts=document.querySelectorAll('#shopcar');
 let redpoint=document.querySelector('#lblCartCount');
+var member=localStorage.getItem('_register');
 let z=[];
 let zee=[];
 let products=[
@@ -68,10 +69,16 @@ let products=[
     }
 ]
 for(let i=0;i<=carts.length-1;i++){
-    carts[i].addEventListener('click',()=>{
-        cartsNumber(products[i]);
-        totalCost(products[i]);
-    })
+        carts[i].addEventListener('click',()=>{
+            if(member!==null){
+            cartsNumber(products[i]);
+            totalCost(products[i]);
+            }
+            else{
+                alert("請先註冊或登入");
+                location.href="http://127.0.0.1:5500/login.html"
+            }
+        })
 }
 function onloadCart(){  //購物車顯示紅字
     var productNumber=localStorage.getItem('cart');
@@ -83,8 +90,6 @@ function onloadCart(){  //購物車顯示紅字
 function setItem(product){  //放置localStorage總共幾項商品
     let cartItem=localStorage.getItem('productsInCart');
     cartItem=JSON.parse(cartItem);
-    var heart1=document.querySelectorAll('.heart');
-    var heart2=document.querySelectorAll('.hearts');
         if(cartItem!=null){      
             if(cartItem[product.tag]==undefined){
                 cartItem={
