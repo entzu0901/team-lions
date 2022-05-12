@@ -33,7 +33,7 @@ function send(){ //註冊功能
             document.querySelector('#confirmPassword').value="";
             document.querySelector('#account1').value="";
             document.querySelector('#name').value="";
-            history.go(1);
+            history.go(-1);
         }
 
     }else{
