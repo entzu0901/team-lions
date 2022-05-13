@@ -59,16 +59,16 @@ function login(){
    var user=document.querySelector('#username').value;
    var passwords=document.querySelector('#password').value;
    for(let i=0; i<=personalJson.length+1;i++){      
-   if(user==personalJson[0].newAccount[i]&&passwords==personalJson[0].newPassword[i]){
-        alert("登入成功");
-        location.href="https://entzu0901.github.io/team-lions/lion-item.html";
+    if(user==personalJson[0].newAccount[i]&&passwords==personalJson[0].newPassword[i]){
+            alert("登入成功");
+            location.href="https://entzu0901.github.io/team-lions/lion-item.html";
+            return;
+    }
+    else{
+        alert("帳號或密碼錯誤或尚未註冊請點下方註冊!!");
+        document.querySelector('#username').value="";
+        document.querySelector('#password').value="";
         return;
-   }
-   else{
-       alert("帳號或密碼錯誤");
-       document.querySelector('#username').value="";
-       document.querySelector('#password').value="";
-       return;
-   }
+    }
  }
 }
